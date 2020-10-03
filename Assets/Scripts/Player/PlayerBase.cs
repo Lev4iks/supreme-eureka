@@ -23,7 +23,7 @@ public class PlayerBase : MonoBehaviour
     {
         //Sania prosty, ne bei!
 
-        if (_interaction!= null)
+        if (_interaction != null)
         {
             if (Input.GetKeyDown(KeyCode.F))
                 _interaction.Interact();
