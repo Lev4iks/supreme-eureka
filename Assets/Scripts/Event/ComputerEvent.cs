@@ -49,14 +49,13 @@ public class ComputerEvent : Event,Interaction
         //Move Player to the position
         _savedPosition = _player.gameObject.transform.position;
         _player.gameObject.transform.position = gameObject.transform.position;
-
     }
 
     private IEnumerator WorkingTime(float waitTime)
     {
         _courantineHasStarted = true;
-
         _movement.DisableMovement();
+        
         yield return new WaitForSeconds(waitTime);
 
         Time.timeScale = 1;
@@ -66,4 +65,5 @@ public class ComputerEvent : Event,Interaction
         _courantineHasStarted = false;
         Debug.Log("Need some coffe");
     }
+    
 }

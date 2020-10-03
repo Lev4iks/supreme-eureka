@@ -7,8 +7,7 @@ public class Event : MonoBehaviour
 {
     private BoxCollider2D eventTrigger;
 
-    [SerializeField]
-    protected float eventRange = 2f;
+    [SerializeField] protected float eventRange = 2f;
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -22,6 +21,7 @@ public class Event : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            PlayerCamera.Instance.Zoom(new Vector3(0f, 0f, -10), gameObject.transform.position);
             EventTrigger();
         }
     }
@@ -31,6 +31,7 @@ public class Event : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             EventExit();
+            PlayerCamera.Instance.Zoom(new Vector3(0f, 0f, -20), Vector3.zero);
         }
     }
 
@@ -41,6 +42,7 @@ public class Event : MonoBehaviour
 
     public virtual void EventExit()
     {
-
+        
     }
+    
 }

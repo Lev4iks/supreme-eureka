@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7440439e2b437b94e8ff8dd9fbcabbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2.4
+  baseMovementSpeed: 2.4
 --- !u!50 &324773170489087930
 Rigidbody2D:
   serializedVersion: 4
@@ -191,6 +191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 454f5e4ecea94351a7ff7630e32ffeee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4317912296511731035, guid: 73363b8f419d55b4bad2360135648761, type: 3}
-  smoothSpeed: 10
+  prefab: {fileID: 4317912296511731035, guid: 546fe5c61827c7948956a368652e5343, type: 3}
+  smoothSpeed: 7
   offset: {x: 0, y: 0, z: -20}

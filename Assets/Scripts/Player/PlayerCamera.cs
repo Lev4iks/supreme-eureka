@@ -22,13 +22,14 @@ public class PlayerCamera : MonoBehaviour
     }
     
     #endregion
-    
-    private Transform _target;
+
+    private bool _isZoomed = false;
+    private Vector3 _targetPosition;
 
     public GameObject prefab;
     public float smoothSpeed;
     public Vector3 offset;
-    
+
     // Cache
     private Vector3 _desiredPosition;
     private Vector3 _smoothedPosition;
@@ -38,23 +39,41 @@ public class PlayerCamera : MonoBehaviour
     {
         if (!gameObject.CompareTag("Player") || !prefab) return;
         
-        GameObject playerCamera = Instantiate(prefab, transform.position, Quaternion.identity, null);
+        GameObject playerCamera = Instantiate(prefab, Vector3.zero, Quaternion.identity, null);
         playerCamera.GetComponent<PlayerCamera>().SetSettings(smoothSpeed, offset);
     }
 
     private void FixedUpdate()
     {
-        _desiredPosition = _target.position + offset; 
-        _smoothedPosition = Vector3.Lerp(transform.position, _desiredPosition, smoothSpeed * Time.deltaTime);
-        transform.position = _smoothedPosition;
+        if (!_isZoomed)
+        {
+            if (_desiredPosition == _targetPosition + offset)
+            {
+                Debug.Log("Stop zoom");
+                _isZoomed = true;
+            }
+        
+            _desiredPosition = _targetPosition + offset; 
+            _smoothedPosition = Vector3.Lerp(transform.position, _desiredPosition, smoothSpeed * Time.deltaTime);
+            transform.position = _smoothedPosition;
+            Debug.Log("Checkicng");
+        }
+
     }
 
     public void SetSettings(float smoothSpeed, Vector3 offset)
     {
         this.smoothSpeed = smoothSpeed;
         this.offset = offset;
-        _target = FindObjectOfType<PlayerBase>().gameObject.transform;
-        transform.position = _target.position + offset;
+        _targetPosition = PlayerBase.Instance.gameObject.transform.position;
+        transform.position = offset;
     }
-    
+
+    public void Zoom(Vector3 newOffset, Vector3 newPosition)
+    {
+        offset = newOffset;
+        _targetPosition = newPosition; 
+        _isZoomed = false;
+    }
+
 }
