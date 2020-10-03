@@ -13,19 +13,20 @@ public class Movement : MonoBehaviour
     public float movementSpeed;
 
     private Vector2 _lastDir;
-    private Rigidbody2D rb2D;
-    private Animator movementAnimator;
+    private Rigidbody2D _rb2D;
+    private Animator _movementAnimator;
     private bool _isMoving = true;
 
+    
     private void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
-        movementAnimator = GetComponent<Animator>();
+        _rb2D = GetComponent<Rigidbody2D>();
+        _movementAnimator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if(_isMoving)
+        if (_isMoving)
             ProcessInputs();
     }
 
@@ -49,14 +50,14 @@ public class Movement : MonoBehaviour
 
     public void MovePlayer()
     {
-        rb2D.MovePosition(rb2D.position + _movementDirection * 
+        _rb2D.MovePosition(_rb2D.position + _movementDirection * 
                           movementSpeed * Time.fixedDeltaTime);
     }
 
     public void ProccesAnimation()
     {
-        movementAnimator.SetFloat("Horizontal", _lastDir.x);
-        movementAnimator.SetFloat("Vertical", _lastDir.y);
+        _movementAnimator.SetFloat("Horizontal", _lastDir.x);
+        _movementAnimator.SetFloat("Vertical", _lastDir.y);
     }
 
     public void DisableMovement()
@@ -68,4 +69,5 @@ public class Movement : MonoBehaviour
     {
         _isMoving = true;
     }
+    
 }

@@ -5,10 +5,6 @@ using TMPro;
 
 public class InterfaceOnScene : MonoBehaviour
 {
-    public float DayLabelTimeDisplay = 2f;
-
-    private TextMeshProUGUI DayNameLabel;
-
     #region Singleton
 
     public static InterfaceOnScene Instance;
@@ -18,15 +14,18 @@ public class InterfaceOnScene : MonoBehaviour
             return;
 
         Instance = this;
-        DayNameLabel = GetComponentInChildren<TextMeshProUGUI>();
+        _dayNameLabel = GetComponentInChildren<TextMeshProUGUI>();
     }
     #endregion
 
     
+    private TextMeshProUGUI _dayNameLabel;
+    public float dayLabelTimeDisplay = 2f;
+    
 
     public void SetDayName(string name)
     {
-        DayNameLabel.text = name;
+        _dayNameLabel.text = name;
     }
 
     public void TriggerDayLabel()
@@ -36,8 +35,9 @@ public class InterfaceOnScene : MonoBehaviour
 
     private IEnumerator LabelTime()
     {
-        DayNameLabel.enabled = true;
-        yield return new WaitForSeconds(DayLabelTimeDisplay);
-        DayNameLabel.enabled = false;
+        _dayNameLabel.enabled = true;
+        yield return new WaitForSeconds(dayLabelTimeDisplay);
+        _dayNameLabel.enabled = false;
     }
+    
 }
