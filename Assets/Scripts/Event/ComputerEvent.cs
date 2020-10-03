@@ -1,36 +1,38 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ComputerEvent : Event,Interaction
 {
     public float WorkTime = 60f;
-    private SpriteRenderer _spriteRenderer;
+
     private PlayerBase _player;
     private Movement _movement;
     private IEnumerator coroutine;
     private Vector2 _savedPosition;
     private bool _courantineHasStarted = false;
 
-    public override void Start()
+    protected override void Start()
     {
         base.Start();
-        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        _spriteRenderer.enabled = false;
         _player = PlayerBase.Instance;
         _movement = _player.GetComponent<Movement>();
     }
 
     public override void EventTrigger()
     {
-        _spriteRenderer.enabled = true;
+        _pointer.SetPointer(PointerType.FButton);
         _player.SetInteraction(this);
     }
 
     public override void EventExit()
     {
-        _spriteRenderer.enabled = false;
+        _pointer.SetPointer(PointerType.TaskArrow);
         _player.SetInteraction(null);
+        
+        if (isDone)
+            Destroy(gameObject);
 
     }
 
@@ -38,7 +40,7 @@ public class ComputerEvent : Event,Interaction
     {
         Debug.Log("Works hard on PC");
 
-        _spriteRenderer.enabled = false;
+        _pointer.SetState(false);
 
         Time.timeScale = 2;
 
@@ -49,6 +51,8 @@ public class ComputerEvent : Event,Interaction
         //Move Player to the position
         _savedPosition = _player.gameObject.transform.position;
         _player.gameObject.transform.position = gameObject.transform.position;
+
+        isDone = true;
     }
 
     private IEnumerator WorkingTime(float waitTime)

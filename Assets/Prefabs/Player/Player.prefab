@@ -54,7 +54,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -193,4 +193,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4317912296511731035, guid: 546fe5c61827c7948956a368652e5343, type: 3}
   smoothSpeed: 7
-  offset: {x: 0, y: 0, z: -20}
+  offset: {x: 0, y: 0, z: -30}

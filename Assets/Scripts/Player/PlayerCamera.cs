@@ -23,7 +23,7 @@ public class PlayerCamera : MonoBehaviour
     
     #endregion
 
-    private bool _isZoomed = false;
+    private bool _isZoomed = true;
     private Vector3 _targetPosition;
 
     public GameObject prefab;
@@ -47,16 +47,12 @@ public class PlayerCamera : MonoBehaviour
     {
         if (!_isZoomed)
         {
-            if (_desiredPosition == _targetPosition + offset)
-            {
-                Debug.Log("Stop zoom");
+            if (transform.position == _targetPosition)
                 _isZoomed = true;
-            }
-        
-            _desiredPosition = _targetPosition + offset; 
+
+            _desiredPosition = _targetPosition; 
             _smoothedPosition = Vector3.Lerp(transform.position, _desiredPosition, smoothSpeed * Time.deltaTime);
             transform.position = _smoothedPosition;
-            Debug.Log("Checkicng");
         }
 
     }
@@ -65,14 +61,13 @@ public class PlayerCamera : MonoBehaviour
     {
         this.smoothSpeed = smoothSpeed;
         this.offset = offset;
-        _targetPosition = PlayerBase.Instance.gameObject.transform.position;
-        transform.position = offset;
+        transform.position += offset;
     }
 
     public void Zoom(Vector3 newOffset, Vector3 newPosition)
     {
         offset = newOffset;
-        _targetPosition = newPosition; 
+        _targetPosition = newPosition + offset; 
         _isZoomed = false;
     }
 
