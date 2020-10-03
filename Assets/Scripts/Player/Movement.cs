@@ -38,10 +38,11 @@ public class Movement : MonoBehaviour
     {
         _movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        if (_movementDirection.x != 0)
+        if (_movementDirection.x != 0 || _movementDirection.y != 0)
+        {
             _lastDir.x = _movementDirection.x;
-        else if (_movementDirection.y != 0)
             _lastDir.y = _movementDirection.y;
+        }
 
         ProccesAnimation();
     }
