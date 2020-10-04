@@ -23,7 +23,7 @@ public class InterfaceOnScene : MonoBehaviour
     private GameObject _dialogWindow;
     private RectTransform _canvasRect;
     private TextMeshProUGUI _dayNameLabel;
-    
+
     public float dayLabelTimeDisplay = 2f;
     public RectTransform CanvasRect => _canvasRect;
 

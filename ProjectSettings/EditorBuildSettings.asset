@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/day1.unity
     guid: 067e175f6a1744708ad784361bf68798
   - enabled: 1
-    path: Assets/Scenes/NightChat.unity
+    path: Assets/Scenes/NightChat 1.unity
     guid: 29b3c0e8c2b9d43aa9a8e542c857c73e
   - enabled: 1
     path: Assets/Scenes/day2.unity
