@@ -76,7 +76,7 @@ public class EventManager : MonoBehaviour
                     }
                     _coffeIndex = Random.Range(0, CoffeArray.Count);
                    
-                    CoffeArray[_currentIndex].SetActive(true);
+                    CoffeArray[_coffeIndex].SetActive(true);
                     break;
                 }
 
@@ -89,7 +89,7 @@ public class EventManager : MonoBehaviour
                         PrinterArray.RemoveAt(_printerIndex);
                     }
                     _printerIndex = Random.Range(0, PrinterArray.Count);
-
+                    Debug.Log($"Works! {_printerIndex}");
                     PrinterArray[_printerIndex].SetActive(true);
                     break;
                 }

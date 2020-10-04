@@ -10,7 +10,8 @@ public class Event : MonoBehaviour
     protected bool isDone = false;
     protected Pointer _pointer;
     protected EventManager _eventManager;
-    
+    protected PlayerAnimations _playerAnimations;
+
     [SerializeField] protected float eventRange = 2f;
 
     

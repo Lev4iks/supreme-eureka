@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ComputerEvent : Event,Interaction
+public class CoffeEvent : Event, Interaction
 {
-    public float WorkTime = 60f;
+    public float DrinkTime = 30f;
 
     private PlayerBase _player;
     private Movement _movement;
     private IEnumerator coroutine;
+    private Vector2 _savedPosition;
     private bool _courantineHasStarted = false;
 
     protected override void Start()
@@ -34,36 +34,32 @@ public class ComputerEvent : Event,Interaction
 
     public void Interact()
     {
-        _playerAnimations.TriggerInteraction(0);
-
+        Debug.Log("Drinking Coffe");
+        _playerAnimations.TriggerInteraction(1);    // 0 - work, 1 - drink, 2 - chat, printer
         _pointer.SetState(false);
 
-        Time.timeScale = 2;
-
-        coroutine = WorkingTime(WorkTime);
-        if(!_courantineHasStarted)
-            StartCoroutine(coroutine);
+        if (!_courantineHasStarted)
+            StartCoroutine(WorkingTime());
 
         //Move Player to the position
+        _savedPosition = _player.gameObject.transform.position;
         _player.gameObject.transform.position = gameObject.transform.position;
     }
 
-    private IEnumerator WorkingTime(float waitTime)
+    private IEnumerator WorkingTime()
     {
         _courantineHasStarted = true;
         _movement.DisableMovement();
-        
-        yield return new WaitForSeconds(waitTime);
 
-        Time.timeScale = 1;
+        yield return new WaitForSeconds(DrinkTime);
+
+        _player.gameObject.transform.position = _savedPosition;
         _movement.StartMoving();
-        _playerAnimations.StopWorking();
-
+        _playerAnimations.StopDrinking(); 
         _courantineHasStarted = false;
 
         _eventManager.SwitchEvent();
 
-        Debug.Log("Need some coffe");
     }
-    
+
 }
