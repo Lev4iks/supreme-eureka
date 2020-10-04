@@ -1144,6 +1144,11 @@ PrefabInstance:
       propertyPath: SceneName
       value: 12:00 AM
       objectReference: {fileID: 0}
+    - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: NextScene
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8422727988282647046, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
       propertyPath: m_LocalPosition.x
