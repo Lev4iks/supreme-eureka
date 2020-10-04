@@ -10,7 +10,7 @@ public class OfficeTimeManager : MonoBehaviour
     public static OfficeTimeManager Instance;
     public float TimeForDay = 300f;
     public float CrossFadeTime = 2;
-    public ScenesManager.Scenes NextScene;
+    public Scenes NextScene;
     public string SceneName;
 
     private SceneCrossfade _sceneCrossfade;
@@ -36,12 +36,12 @@ public class OfficeTimeManager : MonoBehaviour
 
     void Update()
     {
-        if(TimeForDay <= 0)
+        if (TimeForDay <= 0)
         {
             Time.timeScale = 1;
             StartCoroutine(CrossFadeDuration());
         }
-        else if(!_timeStopped)
+        else if (!_timeStopped)
         {
             TimeForDay -= Time.deltaTime;
         }
@@ -63,4 +63,5 @@ public class OfficeTimeManager : MonoBehaviour
     {
         _timeStopped = false;
     }
+    
 }

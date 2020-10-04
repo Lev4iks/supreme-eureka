@@ -24,18 +24,19 @@ public class CoffeEvent : Event, Interaction
     {
         _pointer.SetPointer(PointerType.FButton);
         _player.SetInteraction(this);
+        base.EventTrigger();
     }
 
     public override void EventExit()
     {
         _pointer.SetPointer(PointerType.TaskArrow);
         _player.SetInteraction(null);
+        base.EventExit();
     }
 
-    public void Interact()
+    public override void Interact()
     {
-        Debug.Log("Drinking Coffe");
-        _playerAnimations.TriggerInteraction(1);    // 0 - work, 1 - drink, 2 - chat, printer
+        _playerAnimations.TriggerInteraction(InteractionType.Drink);
         _pointer.SetState(false);
 
         if (!_courantineHasStarted)
@@ -49,17 +50,16 @@ public class CoffeEvent : Event, Interaction
     private IEnumerator WorkingTime()
     {
         _courantineHasStarted = true;
-        _movement.DisableMovement();
 
         yield return new WaitForSeconds(DrinkTime);
 
         _player.gameObject.transform.position = _savedPosition;
-        _movement.StartMoving();
+        _movement.EnableMovement();
         _playerAnimations.StopDrinking(); 
         _courantineHasStarted = false;
 
         _eventManager.SwitchEvent();
-
+        base.Interact(); // Moves camera
     }
 
 }

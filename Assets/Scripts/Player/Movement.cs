@@ -27,12 +27,13 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (_isMoving)
-            ProcessInputs();
+        if (!_isMoving) return;
+        ProcessInputs();
     }
 
     private void FixedUpdate()
     {
+        if (!_isMoving) return;
         MovePlayer();
     }
 
@@ -53,7 +54,7 @@ public class Movement : MonoBehaviour
     public void MovePlayer()
     {
         _rb2D.MovePosition(_rb2D.position + _movementDirection * 
-                          baseMovementSpeed * Time.fixedDeltaTime);
+                           baseMovementSpeed * Time.fixedDeltaTime);
     }
 
     public void ProccesAnimation()
@@ -70,7 +71,7 @@ public class Movement : MonoBehaviour
 
     }
 
-    public void StartMoving()
+    public void EnableMovement()
     {
         _isMoving = true;
     }

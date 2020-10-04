@@ -19,17 +19,18 @@ public class Pointer : MonoBehaviour
 
     [SerializeField] protected float iconAmplitude;
     [SerializeField] protected float iconMovementSpeed;
-
+    [SerializeField] protected Vector3 delta;
+    
 
     private void Start()
     {
         taskArrow = Resources.Load<Sprite>("TaskArrow");
         fButton = Resources.Load<Sprite>("fButton");
-        if (!taskArrow || !fButton)
-            Debug.Log("TaskArrow or fButton doesn't found");
-        
+
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _spriteRenderer.sprite = taskArrow;
+        
+        transform.localPosition = delta; 
         SetState(true);
     }
     
@@ -40,7 +41,8 @@ public class Pointer : MonoBehaviour
         else
             _spriteRenderer.transform.localPosition += Vector3.down * (Time.deltaTime * iconMovementSpeed);
 
-        if (_spriteRenderer.transform.localPosition.y > iconAmplitude / 2 || _spriteRenderer.transform.localPosition.y < -iconAmplitude / 2)
+        var yPosition = _spriteRenderer.transform.localPosition.y - delta.y;
+        if (yPosition > iconAmplitude / 2 || yPosition < -iconAmplitude / 2)
             _iconDirection = !_iconDirection;
     }
 

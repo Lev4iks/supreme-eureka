@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class Event : MonoBehaviour
+public class Event : MonoBehaviour, Interaction
 {
     private BoxCollider2D eventTrigger;
     protected bool isDone = false;
@@ -28,29 +28,28 @@ public class Event : MonoBehaviour
     protected void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-        {
-            PlayerCamera.Instance.Zoom(new Vector3(0, 0, -10), gameObject.transform.position);
             EventTrigger();
-        }
     }
 
     protected void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-        {
             EventExit();
-            PlayerCamera.Instance.Zoom(new Vector3(0, 0, -30), Vector3.zero);
-        }
     }
 
     public virtual void EventTrigger()
     {
-
+        PlayerCamera.Instance.Zoom(PlayerCamera.Instance.eventOffset, gameObject.transform.position);
     }
 
     public virtual void EventExit()
     {
-        
+        PlayerCamera.Instance.Zoom(PlayerCamera.Instance.mainOffset, Vector3.zero);
+    }
+    
+    public virtual void Interact()
+    {
+        PlayerCamera.Instance.Zoom(PlayerCamera.Instance.mainOffset, Vector3.zero);
     }
     
 }

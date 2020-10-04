@@ -18,7 +18,7 @@ public class SceneCrossfade : MonoBehaviour
 
     public void TriggerCrossfade(bool option)
     {
-        if(!option)
+        if (!option)
             animator.SetTrigger("FadeOut");
     }
 }

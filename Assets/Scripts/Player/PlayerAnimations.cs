@@ -2,36 +2,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum InteractionType
+{
+    Work = 0,
+    Drink = 1,
+    Chat = 2,
+    Copy = 3
+}
+
 public class PlayerAnimations : MonoBehaviour
 {
     Animator animator;
-    // Start is called before the first frame update
+    
+    
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    public void TriggerInteraction(int index)
+    public void TriggerInteraction(InteractionType interactionType)
     {
         animator.SetTrigger("Interact");
-        switch (index)
+        switch (interactionType)
         {
             //Working
-            case 0:
+            case InteractionType.Work:
                 {
                     animator.SetBool("Work",true);
                     break;
                 }
             //Drinking
-            case 1:
+            case InteractionType.Drink:
                 {
                     animator.SetBool("Drink", true);
                     break;
                 }
-            //Speaking or printing
-            case 2:
+            //Speaking
+            case InteractionType.Chat:
                 {
                     //coming soon...
+                    break;
+                }
+            //Copying
+            case InteractionType.Copy:
+                {
+                    //
                     break;
                 }
         }
@@ -46,4 +62,5 @@ public class PlayerAnimations : MonoBehaviour
     {
         animator.SetBool("Work", false);
     }
+    
 }

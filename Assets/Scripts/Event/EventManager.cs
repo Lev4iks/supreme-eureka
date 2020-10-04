@@ -19,24 +19,17 @@ public class EventManager : MonoBehaviour
     private int _pcIndex = -1;
     private int _printerIndex = -1;
 
+    
     private void Start()
     {
+        for (int i = 1; i < PCArray.Count; i++)
+            PCArray[i].SetActive(false);
         
-        for (int i = 0; i < PCArray.Count; i++)
-        {
-            if(i!= 0)
-                PCArray[i].SetActive(false);
-        }
-
         for (int i = 0; i < CoffeArray.Count; i++)
-        {
             CoffeArray[i].SetActive(false);
-        }
-
+        
         for (int i = 0; i < PrinterArray.Count; i++)
-        {
             PrinterArray[i].SetActive(false);
-        }
 
     }
 
@@ -44,12 +37,9 @@ public class EventManager : MonoBehaviour
     {
         if (_currentIndex < 3)
             _currentIndex++;
-
         else
-        {
             _currentIndex = 0;
-        }
-
+        
         switch (_currentIndex)
         {
             case 0:

@@ -5,19 +5,19 @@ using UnityEngine.SceneManagement;
 using System;
 
 
-public class ScenesManager:MonoBehaviour
+public enum Scenes
 {
+    Day1 = 0,
+    Day2 = 1,
+    Day3 = 2,
+    Day4 = 3,
+    Day5 = 4,
+    NightChat = 5,
+}
 
-    public enum Scenes
-    {
-        Day1 = 0,
-        Day2,
-        Day3,
-        Day4,
-        Day5,
-        NightChat,
-    }
-
+public class ScenesManager: MonoBehaviour
+{
+    
     public void LoadScene(Scenes scenes, Vector3 position = new Vector3())
     {
         SceneManager.LoadScene(scenes.ToString());

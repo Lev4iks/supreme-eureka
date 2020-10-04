@@ -28,7 +28,8 @@ public class PlayerCamera : MonoBehaviour
 
     public GameObject prefab;
     public float smoothSpeed;
-    public Vector3 offset;
+    public Vector3 mainOffset;
+    public Vector3 eventOffset;
 
     // Cache
     private Vector3 _desiredPosition;
@@ -40,7 +41,8 @@ public class PlayerCamera : MonoBehaviour
         if (!gameObject.CompareTag("Player") || !prefab) return;
         
         GameObject playerCamera = Instantiate(prefab, Vector3.zero, Quaternion.identity, null);
-        playerCamera.GetComponent<PlayerCamera>().SetSettings(smoothSpeed, offset);
+        playerCamera.GetComponent<PlayerCamera>().SetSettings(smoothSpeed, mainOffset, eventOffset);
+        Destroy(this);
     }
 
     private void FixedUpdate()
@@ -57,17 +59,17 @@ public class PlayerCamera : MonoBehaviour
 
     }
 
-    public void SetSettings(float smoothSpeed, Vector3 offset)
+    private void SetSettings(float smoothSpeed, Vector3 mainOffset, Vector3 eventOffset)
     {
         this.smoothSpeed = smoothSpeed;
-        this.offset = offset;
-        transform.position += offset;
+        this.mainOffset = mainOffset;
+        this.eventOffset = eventOffset;
+        transform.position += mainOffset;
     }
 
     public void Zoom(Vector3 newOffset, Vector3 newPosition)
     {
-        offset = newOffset;
-        _targetPosition = newPosition + offset; 
+        _targetPosition = newPosition + newOffset; 
         _isZoomed = false;
     }
 

@@ -20,19 +20,21 @@ public class DialogEvent : Event, Interaction
     {
         _pointer.SetPointer(PointerType.FButton);
         _player.SetInteraction(this);
+        base.EventTrigger();
     }
 
     public override void EventExit()
     {
         _pointer.SetPointer(PointerType.TaskArrow);
         _player.SetInteraction(null);
+        base.EventExit();
     }
 
-    public void Interact()
+    public override void Interact()
     {
         Debug.Log("Talks");
 
-        _playerAnimations.TriggerInteraction(0);    // 0 - work, 1 - drink, 2 - chat, printer
+        _playerAnimations.TriggerInteraction(InteractionType.Work);
 
         _pointer.SetState(false);
         _movement.DisableMovement();
@@ -47,7 +49,9 @@ public class DialogEvent : Event, Interaction
 
         //Resume the time after finishing the dialog
 
-        _movement.StartMoving();
+        _movement.EnableMovement();
         OfficeTimeManager.Instance.ResumeTime();
+        base.Interact(); // Moves camera
     }
+    
 }

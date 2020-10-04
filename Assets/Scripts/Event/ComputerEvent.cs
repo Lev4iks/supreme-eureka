@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ComputerEvent : Event,Interaction
 {
-    public float WorkTime = 60f;
+    public float WorkTime = 30f;
 
     private PlayerBase _player;
     private Movement _movement;
@@ -24,15 +24,17 @@ public class ComputerEvent : Event,Interaction
     {
         _pointer.SetPointer(PointerType.FButton);
         _player.SetInteraction(this);
+        base.EventTrigger();
     }
 
     public override void EventExit()
     {
         _pointer.SetPointer(PointerType.TaskArrow);
         _player.SetInteraction(null);
+        base.EventExit();
     }
 
-    public void Interact()
+    public override void Interact()
     {
         _playerAnimations.TriggerInteraction(0);
 
@@ -56,14 +58,13 @@ public class ComputerEvent : Event,Interaction
         yield return new WaitForSeconds(waitTime);
 
         Time.timeScale = 1;
-        _movement.StartMoving();
+        _movement.EnableMovement();
         _playerAnimations.StopWorking();
 
         _courantineHasStarted = false;
 
         _eventManager.SwitchEvent();
-
-        Debug.Log("Need some coffe");
+        base.Interact(); // Moves camera
     }
     
 }
