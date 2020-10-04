@@ -15,10 +15,7 @@ public class EventManager : MonoBehaviour
 
     private int _currentIndex = 0;
 
-    private int _coffeIndex = -1;
-    private int _pcIndex = -1;
-    private int _printerIndex = -1;
-
+    
     
     private void Start()
     {
@@ -44,43 +41,30 @@ public class EventManager : MonoBehaviour
         {
             case 0:
                 {
-                    //If this is our first time, we do not need to delete element
-                    if (_pcIndex > -1)
-                    {
-                        PCArray[_pcIndex].SetActive(false);
-                        PCArray.RemoveAt(_pcIndex);
-                    }
-                    _pcIndex = Random.Range(0, PCArray.Count);
 
-                    PCArray[_pcIndex].SetActive(true);
+
+                    CoffeArray[0].SetActive(false);
+                    PrinterArray[0].SetActive(false);
+                    PCArray[0].SetActive(true);
                     break;
                 }
 
             case 1:
                 {
-                    //If this is our first time, we do not need to delete element
-                    if (_coffeIndex > -1)
-                    {
-                        CoffeArray[_coffeIndex].SetActive(false);
-                        CoffeArray.RemoveAt(_coffeIndex);
-                    }
-                    _coffeIndex = Random.Range(0, CoffeArray.Count);
-                   
-                    CoffeArray[_coffeIndex].SetActive(true);
+
+
+                    PrinterArray[0].SetActive(false);
+                    PCArray[0].SetActive(false);
+                    CoffeArray[0].SetActive(true);
                     break;
                 }
 
             case 2:
                 {
-                    //If this is our first time, we do not need to delete element
-                    if (_printerIndex > -1)
-                    {
-                        PrinterArray[_printerIndex].SetActive(false);
-                        PrinterArray.RemoveAt(_printerIndex);
-                    }
-                    _printerIndex = Random.Range(0, PrinterArray.Count);
-                    Debug.Log($"Works! {_printerIndex}");
-                    PrinterArray[_printerIndex].SetActive(true);
+
+                    PCArray[0].SetActive(false);
+                    CoffeArray[0].SetActive(false);
+                    PrinterArray[0].SetActive(true);
                     break;
                 }
         }
