@@ -61,8 +61,13 @@ public class Movement : MonoBehaviour
     {
         _movementAnimator.SetFloat("Horizontal", _lastDir.x);
         _movementAnimator.SetFloat("Vertical", _lastDir.y);
-        _movementAnimator.SetFloat("Speed",
+        if(_isMoving)
+            _movementAnimator.SetFloat("Speed",
                                    Mathf.Clamp(_movementDirection.magnitude, 0.0f, 1.0f));
+        else
+        {
+            _movementAnimator.SetFloat("Speed",0f);
+        }
     }
 
     public void DisableMovement()
