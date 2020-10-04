@@ -30,6 +30,7 @@ public class ComputerEvent : Event,IInteraction
         pointer.SetState(false);
 
         Time.timeScale = 2;
+        OfficeTimeManager.Instance.ResumeTime();
 
         coroutine = WorkingTime(WorkTime);
         if(!_courantineHasStarted)
@@ -47,6 +48,8 @@ public class ComputerEvent : Event,IInteraction
         yield return new WaitForSeconds(waitTime);
 
         Time.timeScale = 1;
+        OfficeTimeManager.Instance.StopTime();
+
         movement.EnableMovement();
         playerAnimations.StopWorking();
 

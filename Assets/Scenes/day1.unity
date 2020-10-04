@@ -1941,6 +1941,12 @@ PrefabInstance:
       propertyPath: travelPoints.Array.data[4]
       value: 
       objectReference: {fileID: 644802148}
+    - target: {fileID: 2487598258075787086, guid: 8668f68b62bc41d4a8e67fb6f4340efa,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9202765599425530469, guid: b6f945241a972474dbc8b6f583f2e51e,
+        type: 3}
     - target: {fileID: 3509335796167597516, guid: 8668f68b62bc41d4a8e67fb6f4340efa,
         type: 3}
       propertyPath: m_Name
