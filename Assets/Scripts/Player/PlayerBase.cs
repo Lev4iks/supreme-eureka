@@ -18,7 +18,7 @@ public class PlayerBase : MonoBehaviour
     }
     #endregion
 
-    private Interaction _interaction;
+    private IInteraction _interaction;
     private Movement _playerMovement;
 
 
@@ -37,7 +37,7 @@ public class PlayerBase : MonoBehaviour
         _interaction = null;
     }
 
-    public void SetInteraction(Interaction interaction)
+    public void SetInteraction(IInteraction interaction)
     {
         _interaction = interaction;
     }

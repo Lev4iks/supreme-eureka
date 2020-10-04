@@ -1,20 +1,18 @@
-﻿using UnityEngine;
+﻿using System;
+using TMPro;
+using UnityEngine;
 
 
 public class DialogWindow : MonoBehaviour
 {
-    private Sprite _sprite;
+    [SerializeField] private TMP_Text characterName;
+    [SerializeField] private TMP_Text dialog;
+
+
+    public void SetOptions(string characterName, string dialog)
+    {
+        this.characterName.SetText(characterName);
+        this.dialog.SetText(dialog);
+    }
     
-    private void Start()
-    {
-        _sprite = Resources.Load<Sprite>("DialogWindow");
-    }
-
-    public void CreateWindow()
-    {
-        GameObject window = Instantiate(new GameObject(), gameObject.transform);
-        window.AddComponent<SpriteRenderer>();
-        window.GetComponent<SpriteRenderer>().sprite = _sprite;
-    }
-
 }
