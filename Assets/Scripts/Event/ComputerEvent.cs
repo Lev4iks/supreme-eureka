@@ -30,10 +30,6 @@ public class ComputerEvent : Event,Interaction
     {
         _pointer.SetPointer(PointerType.TaskArrow);
         _player.SetInteraction(null);
-        
-        if (isDone)
-            Destroy(gameObject);
-
     }
 
     public void Interact()
@@ -51,8 +47,6 @@ public class ComputerEvent : Event,Interaction
         //Move Player to the position
         _savedPosition = _player.gameObject.transform.position;
         _player.gameObject.transform.position = gameObject.transform.position;
-
-        isDone = true;
     }
 
     private IEnumerator WorkingTime(float waitTime)
@@ -67,6 +61,9 @@ public class ComputerEvent : Event,Interaction
         _movement.StartMoving();
 
         _courantineHasStarted = false;
+
+        _eventManager.SwitchEvent();
+
         Debug.Log("Need some coffe");
     }
     

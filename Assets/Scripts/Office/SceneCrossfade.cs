@@ -12,7 +12,7 @@ public class SceneCrossfade : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        InterfaceOnScene.Instance.SetDayName((OfficeTimeManager.Instance.NextScene - 1).ToString());
+        InterfaceOnScene.Instance.SetDayName(OfficeTimeManager.Instance.SceneName);
         InterfaceOnScene.Instance.TriggerDayLabel();
     }
 

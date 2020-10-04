@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8422727988282647046}
   - component: {fileID: 8422727988282647040}
   - component: {fileID: 8422727988282647041}
+  - component: {fileID: 3404659357469758887}
   m_Layer: 0
   m_Name: Office Time Manager
   m_TagString: Untagged
@@ -59,3 +60,25 @@ MonoBehaviour:
   TimeForDay: 300
   CrossFadeTime: 2
   NextScene: 1
+  SceneName: 
+--- !u!114 &3404659357469758887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422727988282647047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548bc853ef99147c195f7c39bf86d6c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PCArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  CoffeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  PrinterArray:
+  - {fileID: 0}
+  - {fileID: 0}

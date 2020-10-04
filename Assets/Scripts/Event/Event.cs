@@ -9,6 +9,7 @@ public class Event : MonoBehaviour
     private BoxCollider2D eventTrigger;
     protected bool isDone = false;
     protected Pointer _pointer;
+    protected EventManager _eventManager;
     
     [SerializeField] protected float eventRange = 2f;
 
@@ -18,6 +19,7 @@ public class Event : MonoBehaviour
         eventTrigger = GetComponent<BoxCollider2D>();
         eventTrigger.size = new Vector2(eventRange, eventRange);
         eventTrigger.isTrigger = true;
+        _eventManager = OfficeTimeManager.Instance.GetComponent<EventManager>();
 
         _pointer = GetComponentInChildren<Pointer>();
     }

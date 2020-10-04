@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(ScenesManager))]
+[RequireComponent(typeof(EventManager))]
 
 public class OfficeTimeManager : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class OfficeTimeManager : MonoBehaviour
     public float TimeForDay = 300f;
     public float CrossFadeTime = 2;
     public ScenesManager.Scenes NextScene;
+    public string SceneName;
 
     private SceneCrossfade _sceneCrossfade;
     private ScenesManager _scenesManager;
+    private bool _timeStopped = false;
 
     #region Singleton
     void Awake()
@@ -35,9 +38,10 @@ public class OfficeTimeManager : MonoBehaviour
     {
         if(TimeForDay <= 0)
         {
+            Time.timeScale = 1;
             StartCoroutine(CrossFadeDuration());
         }
-        else
+        else if(!_timeStopped)
         {
             TimeForDay -= Time.deltaTime;
         }
@@ -48,5 +52,15 @@ public class OfficeTimeManager : MonoBehaviour
         _sceneCrossfade.TriggerCrossfade(true);
         yield return new WaitForSeconds(CrossFadeTime);
         _scenesManager.LoadScene(NextScene);
+    }
+
+    public void StopTime()
+    {
+        _timeStopped = true;
+    }
+
+    public void ResumeTime()
+    {
+        _timeStopped = false;
     }
 }

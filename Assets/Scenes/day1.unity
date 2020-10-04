@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &126240726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4235563194821340004, guid: 96d9b7ca206c342bfb92c4dbd81aca06,
+    type: 3}
+  m_PrefabInstance: {fileID: 619272541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &619272541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271,10 +277,60 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: CoffeArray.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: PCArray.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: PrinterArray.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: PCArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 126240726}
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: PCArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: CoffeArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 126240726}
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: CoffeArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: PrinterArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 126240726}
+    - target: {fileID: 3404659357469758887, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: PrinterArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 126240726}
     - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
       propertyPath: TimeForDay
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: SceneName
+      value: Day 1
       objectReference: {fileID: 0}
     - target: {fileID: 8422727988282647046, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
