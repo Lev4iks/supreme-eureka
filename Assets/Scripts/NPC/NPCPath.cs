@@ -11,8 +11,8 @@ public class NPCPath : MonoBehaviour
     [SerializeField]
     private float speed;
 
-    [SerializeField]
-    GameObject[] travelPoints;
+    [SerializeField] private Transform travelPointsParent;
+    private Transform[] _travelPoints;
 
     [SerializeField]
     private float standTime = 15f;
@@ -27,13 +27,14 @@ public class NPCPath : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        _travelPoints = travelPointsParent.GetComponentsInChildren<Transform>();
     }
 
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Vector2.Distance(travelPoints[_curentIndex].transform.position,transform.position) < 0.1f)
+        if (Vector2.Distance(_travelPoints[_curentIndex].position,transform.position) < 0.1f)
         {
             if (_curentIndex == 0)
             {
@@ -42,7 +43,7 @@ public class NPCPath : MonoBehaviour
                     StartCoroutine(StandTime());
             }
 
-            if (_curentIndex == travelPoints.Length - 1)
+            if (_curentIndex == _travelPoints.Length - 1)
             {
                 _reverseWay = true;
                 if (!_courantineHasStarted)
@@ -57,7 +58,7 @@ public class NPCPath : MonoBehaviour
             }
         }
 
-        Vector3 dir = (travelPoints[_curentIndex].transform.position - transform.position).normalized;
+        Vector3 dir = (_travelPoints[_curentIndex].position - transform.position).normalized;
 
         animator.SetFloat("Horizontal", dir.x);
         animator.SetFloat("Vertical", dir.y);
