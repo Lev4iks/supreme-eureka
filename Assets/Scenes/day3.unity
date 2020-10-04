@@ -193,5 +193,10 @@ PrefabInstance:
       propertyPath: SceneName
       value: Day 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8821026537515645143, guid: e7adefe0928214bd09e01a50d90417b9,
+        type: 3}
+      propertyPath: NextScene
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7adefe0928214bd09e01a50d90417b9, type: 3}
