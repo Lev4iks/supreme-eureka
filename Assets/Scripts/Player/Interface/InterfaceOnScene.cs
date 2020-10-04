@@ -51,25 +51,13 @@ public class InterfaceOnScene : MonoBehaviour
         _dayNameLabel.enabled = false;
     }
 
-    public void CreateDialogWindow(Transform character, string characterName, string dialog)
+    public GameObject CreateDialogWindow(Transform character, string characterName, string dialog)
     {
         GameObject dWindow = Instantiate(_dialogWindow, 
             transform.position, Quaternion.identity, transform);
         dWindow.GetComponent<DialogWindow>().SetOptions(character, characterName, dialog);
+
+        return dWindow;
     }
 
-    private Vector3 WorldPointsToScreenTranslate(Transform world, RectTransform screen)
-    {
-        var playerCamera = PlayerCamera.Instance.GetComponent<Camera>();
-        var sizeDelta = screen.sizeDelta;
-        
-        Vector3 viewportPosition = playerCamera.WorldToViewportPoint(world.transform.position);
-        Vector3 worldScreenPosition = new Vector3(
-            ((viewportPosition.x * sizeDelta.x) - (sizeDelta.x * 0.5f)),
-            ((viewportPosition.y * sizeDelta.y) - (sizeDelta.y * 0.5f)), 
-            world.position.z);
-
-        return worldScreenPosition;
-    }
-    
 }

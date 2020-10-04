@@ -6,42 +6,35 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
-    public Queue<string> sentences;
-    public Text nameText;
-    public Text dialogText;
+    private int _index = 0;
+    private GameObject _dWindow;
+    private Dialog _dialog;
     
 
     private void Start()
     {
-        sentences = new Queue<string>();
+        _dialog = GetComponentInParent<NPC>().dialog;
     }
 
-    public void StartDialog(Dialog dialog)
+    public bool Talk()
     {
-        nameText.text = dialog.characterName;
-        sentences.Clear();
-
-        foreach (var sentence in dialog.sentences)
-            sentences.Enqueue(sentence);
-
-        DisplayNextSentence();
-    }
-
-    public void DisplayNextSentence()
-    {
-        if (sentences.Count == 0)
+        Destroy(_dWindow);
+        if (_dialog.sentences.Length > _index) 
         {
-            EndDialog();
-            return;
+            _dWindow = InterfaceOnScene.Instance.CreateDialogWindow
+                (transform, _dialog.characterName, _dialog.sentences[_index]);
+            _index++;
+            return true;
         }
-
-        string sentence = sentences.Dequeue();
-        dialogText.text = sentence;
-    }
-
-    public void EndDialog()
-    {
         
+        return false;
     }
-    
+
+    public void StartDialog()
+    {
+        _dWindow = InterfaceOnScene.Instance.CreateDialogWindow
+            (transform, _dialog.characterName, _dialog.sentences[_index]);
+        _index++;
+    }
+
 }
