@@ -12,7 +12,11 @@ public enum Scenes
     Day3 = 2,
     Day4 = 3,
     Day5 = 4,
-    NightChat = 5,
+    NightChat1 = 5,
+    NightChat2 = 5,
+    NightChat3 = 5,
+    NightChat4 = 5,
+    NightChat5 = 5,
 }
 
 public class ScenesManager: MonoBehaviour
