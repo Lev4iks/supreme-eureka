@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -18,10 +19,20 @@ public class InterfaceOnScene : MonoBehaviour
     }
     #endregion
 
-    
+
+    private GameObject _dialogWindow;
+    private RectTransform _canvasRect;
     private TextMeshProUGUI _dayNameLabel;
-    public float dayLabelTimeDisplay = 2f;
     
+    public float dayLabelTimeDisplay = 2f;
+    public RectTransform CanvasRect => _canvasRect;
+
+
+    private void Start()
+    {
+        _dialogWindow = Resources.Load<GameObject>("DialogWindow");
+        _canvasRect = GetComponent<Canvas>().GetComponent<RectTransform>();
+    }
 
     public void SetDayName(string name)
     {
@@ -39,5 +50,14 @@ public class InterfaceOnScene : MonoBehaviour
         yield return new WaitForSeconds(dayLabelTimeDisplay);
         _dayNameLabel.enabled = false;
     }
-    
+
+    public GameObject CreateDialogWindow(Transform character, string characterName, string dialog)
+    {
+        GameObject dWindow = Instantiate(_dialogWindow, 
+            transform.position, Quaternion.identity, transform);
+        dWindow.GetComponent<DialogWindow>().SetOptions(character, characterName, dialog);
+
+        return dWindow;
+    }
+
 }

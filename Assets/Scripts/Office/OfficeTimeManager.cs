@@ -15,7 +15,7 @@ public class OfficeTimeManager : MonoBehaviour
 
     private SceneCrossfade _sceneCrossfade;
     private ScenesManager _scenesManager;
-    private bool _timeStopped = false;
+    private bool _timeStopped = true;
 
     #region Singleton
     void Awake()

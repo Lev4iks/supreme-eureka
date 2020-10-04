@@ -3,67 +3,59 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ComputerEvent : Event,Interaction
+public class ComputerEvent : Event,IInteraction
 {
     public float WorkTime = 30f;
-
-    private PlayerBase _player;
-    private Movement _movement;
+    
     private IEnumerator coroutine;
     private bool _courantineHasStarted = false;
-
-    protected override void Start()
-    {
-        base.Start();
-        _player = PlayerBase.Instance;
-        _movement = _player.GetComponent<Movement>();
-        _playerAnimations = _player.GetComponent<PlayerAnimations>();
-    }
+    
 
     public override void EventTrigger()
     {
-        _pointer.SetPointer(PointerType.FButton);
-        _player.SetInteraction(this);
+        pointer.SetPointer(PointerType.FButton);
         base.EventTrigger();
     }
 
     public override void EventExit()
     {
-        _pointer.SetPointer(PointerType.TaskArrow);
-        _player.SetInteraction(null);
+        pointer.SetPointer(PointerType.TaskArrow);
         base.EventExit();
     }
 
     public override void Interact()
     {
-        _playerAnimations.TriggerInteraction(0);
+        playerAnimations.TriggerInteraction(0);
 
-        _pointer.SetState(false);
+        pointer.SetState(false);
 
         Time.timeScale = 2;
+        OfficeTimeManager.Instance.ResumeTime();
 
         coroutine = WorkingTime(WorkTime);
         if(!_courantineHasStarted)
             StartCoroutine(coroutine);
 
         //Move Player to the position
-        _player.gameObject.transform.position = gameObject.transform.position;
+        player.gameObject.transform.position = gameObject.transform.position;
     }
 
     private IEnumerator WorkingTime(float waitTime)
     {
         _courantineHasStarted = true;
-        _movement.DisableMovement();
+        movement.DisableMovement();
         
         yield return new WaitForSeconds(waitTime);
 
         Time.timeScale = 1;
-        _movement.EnableMovement();
-        _playerAnimations.StopWorking();
+        OfficeTimeManager.Instance.StopTime();
+
+        movement.EnableMovement();
+        playerAnimations.StopWorking();
 
         _courantineHasStarted = false;
 
-        _eventManager.SwitchEvent();
+        eventManager.SwitchEvent();
         base.Interact(); // Moves camera
     }
     
