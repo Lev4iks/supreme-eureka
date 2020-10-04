@@ -15,6 +15,7 @@ public class ScenesManager:MonoBehaviour
         Day3,
         Day4,
         Day5,
+        NightChat,
     }
 
     public void LoadScene(Scenes scenes, Vector3 position = new Vector3())

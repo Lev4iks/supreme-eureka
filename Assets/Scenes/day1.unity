@@ -208,11 +208,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 396214077694591200, guid: 54760145a02a6490da95872f48978b92,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 396214077941795864, guid: 54760145a02a6490da95872f48978b92,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -272,11 +267,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Interface
-      objectReference: {fileID: 0}
-    - target: {fileID: 396214077941795871, guid: 54760145a02a6490da95872f48978b92,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54760145a02a6490da95872f48978b92, type: 3}
@@ -341,6 +331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: SceneName
       value: Day 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: NextScene
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8422727988282647046, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
