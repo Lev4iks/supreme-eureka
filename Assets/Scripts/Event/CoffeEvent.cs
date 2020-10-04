@@ -2,11 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(AudioSource))]
+
 public class CoffeEvent : Event, IInteraction
 {
     public float DrinkTime = 30f;
-    
-    private IEnumerator coroutine;
+
+    [SerializeField]
+    private AudioClip interactSound;
+    [SerializeField]
+    private AudioClip actionSound;
+    [SerializeField]
+    private AudioSource audioSource;
+
     private Vector2 _savedPosition;
     private bool _courantineHasStarted = false;
     
@@ -25,6 +34,7 @@ public class CoffeEvent : Event, IInteraction
 
     public override void Interact()
     {
+        audioSource.PlayOneShot(interactSound);
         playerAnimations.TriggerInteraction(InteractionType.Drink);
         pointer.SetState(false);
 
@@ -39,7 +49,7 @@ public class CoffeEvent : Event, IInteraction
     private IEnumerator WorkingTime()
     {
         _courantineHasStarted = true;
-
+        audioSource.PlayOneShot(actionSound);
         yield return new WaitForSeconds(DrinkTime);
 
         player.gameObject.transform.position = _savedPosition;

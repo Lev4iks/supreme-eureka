@@ -3,13 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+[RequireComponent(typeof(AudioSource))]
+
 public class ComputerEvent : Event,IInteraction
 {
     public float WorkTime = 30f;
     
     private IEnumerator coroutine;
     private bool _courantineHasStarted = false;
+    [SerializeField]
+    private AudioClip interactSound;
     
+    [SerializeField]
+    private AudioSource audioSource;
+
 
     public override void EventTrigger()
     {
@@ -26,6 +35,7 @@ public class ComputerEvent : Event,IInteraction
     public override void Interact()
     {
         playerAnimations.TriggerInteraction(0);
+        audioSource.PlayOneShot(interactSound);
 
         pointer.SetState(false);
 
@@ -44,7 +54,7 @@ public class ComputerEvent : Event,IInteraction
     {
         _courantineHasStarted = true;
         movement.DisableMovement();
-        
+
         yield return new WaitForSeconds(waitTime);
 
         Time.timeScale = 1;

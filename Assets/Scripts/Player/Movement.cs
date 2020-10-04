@@ -29,6 +29,7 @@ public class Movement : MonoBehaviour
     {
         if (!_isMoving) return;
         ProcessInputs();
+        ProccesAnimation();
     }
 
     private void FixedUpdate()
@@ -47,8 +48,6 @@ public class Movement : MonoBehaviour
             _lastDir.x = _movementDirection.x;
             _lastDir.y = _movementDirection.y;
         }
-
-        ProccesAnimation();
     }
 
     public void MovePlayer()
