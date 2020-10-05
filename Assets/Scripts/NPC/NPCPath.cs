@@ -12,7 +12,7 @@ public class NPCPath : MonoBehaviour
     private float speed;
 
     [SerializeField] private Transform travelPointsParent;
-    private Transform[] _travelPoints;
+    public Transform[] _travelPoints;
 
     [SerializeField]
     private float standTime = 15f;
@@ -27,7 +27,6 @@ public class NPCPath : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        _travelPoints = travelPointsParent.GetComponentsInChildren<Transform>();
     }
 
 
