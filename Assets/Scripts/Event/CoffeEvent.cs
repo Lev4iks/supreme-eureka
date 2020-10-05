@@ -40,10 +40,6 @@ public class CoffeEvent : Event, IInteraction
 
         if (!_courantineHasStarted)
             StartCoroutine(WorkingTime());
-
-        //Move Player to the position
-        _savedPosition = player.gameObject.transform.position;
-        player.gameObject.transform.position = gameObject.transform.position;
     }
 
     private IEnumerator WorkingTime()
@@ -51,8 +47,7 @@ public class CoffeEvent : Event, IInteraction
         _courantineHasStarted = true;
         audioSource.PlayOneShot(actionSound);
         yield return new WaitForSeconds(DrinkTime);
-
-        player.gameObject.transform.position = _savedPosition;
+        
         movement.EnableMovement();
         playerAnimations.StopDrinking(); 
         _courantineHasStarted = false;
