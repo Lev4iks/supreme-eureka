@@ -81,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4317912296511731035, guid: 546fe5c61827c7948956a368652e5343, type: 3}
   smoothSpeed: 7
-  mainOffset: {x: 0.49, y: 1.2, z: -29.9}
+  mainOffset: {x: 0.49, y: -0.7, z: -36.96}
   eventOffset: {x: 0, y: 0, z: -15}
 --- !u!50 &324773170489087930
 Rigidbody2D:
