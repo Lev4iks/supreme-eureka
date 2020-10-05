@@ -20,14 +20,14 @@ public class TalkEvent : Event, IInteraction
     
     public override void EventTrigger()
     {
+        player.SetInteraction(this);
         pointer.SetState(true);
-        base.EventTrigger();
     }
 
     public override void EventExit()
     {
+        player.SetInteraction(null);
         pointer.SetState(false);
-        base.EventExit();
     }
 
     private void StartDialog()
@@ -50,7 +50,6 @@ public class TalkEvent : Event, IInteraction
         GetComponentInParent<NPCPath>().SetMovement(true);
         
         OfficeTimeManager.Instance.ResumeTime();
-        base.Interact(); // Moves camera
         Destroy(gameObject);
     }
 

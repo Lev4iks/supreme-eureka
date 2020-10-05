@@ -22,21 +22,21 @@ public class BossFinalEvent : HiddenEvent
     public override void Interact()
     {
         if (!_coroutineStarted)
-            StartCoroutine(Talk(_dialog.sentences[0]));
+            StartCoroutine(Talk(_dialog.sentences[_index]));
     }
 
     private IEnumerator Talk(String dialog)
     {
         _index++;
-        if (_index > 2)
-            // Win
-        
+
         movement.EnableMovement();
         _coroutineStarted = true;
         GameObject dWindow = InterfaceOnScene.Instance.CreateDialogWindow(boss.transform, dialog);
         yield return new WaitForSeconds(dialogTime);
         Destroy(dWindow);
         _coroutineStarted = false;
+        if (_index > 2)
+            OfficeTimeManager.Instance.isWinBoss = true;
     }
 
 }
