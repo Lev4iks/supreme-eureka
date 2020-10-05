@@ -24,7 +24,7 @@ public class ThinkAction : MonoBehaviour
     private IEnumerator Thinking(String dialog)
     {
         _coroutineStarted = true;
-        GameObject dWindow = InterfaceOnScene.Instance.CreateDialogWindow(transform, dialog);
+        GameObject dWindow = InterfaceOnScene.Instance.CreateSelfDialogWindow(transform, dialog);
         yield return new WaitForSeconds(thinkTime);
         Destroy(dWindow);
         _coroutineStarted = false;

@@ -31,7 +31,7 @@ public class BossFinalEvent : HiddenEvent
 
         movement.EnableMovement();
         _coroutineStarted = true;
-        GameObject dWindow = InterfaceOnScene.Instance.CreateDialogWindow(boss.transform, dialog);
+        GameObject dWindow = InterfaceOnScene.Instance.CreateBossDialogWindow(boss.transform, dialog);
         yield return new WaitForSeconds(dialogTime);
         Destroy(dWindow);
         _coroutineStarted = false;

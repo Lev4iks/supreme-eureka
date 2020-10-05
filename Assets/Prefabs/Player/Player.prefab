@@ -339,4 +339,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40556e386ac7c040a9093a2437677bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thinkTime: 5
+  thinkTime: 2

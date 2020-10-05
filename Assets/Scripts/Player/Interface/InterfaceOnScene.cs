@@ -22,6 +22,8 @@ public class InterfaceOnScene : MonoBehaviour
 
 
     private GameObject _dialogWindow;
+    private GameObject _bossDialogWindow;
+    private GameObject _selfDialogWindow;
     private RectTransform _canvasRect;
     private TextMeshProUGUI _dayNameLabel;
 
@@ -38,6 +40,8 @@ public class InterfaceOnScene : MonoBehaviour
     private void Start()
     {
         _dialogWindow = Resources.Load<GameObject>("DialogWindow");
+        _bossDialogWindow = Resources.Load<GameObject>("BossDialogWindow");
+        _selfDialogWindow = Resources.Load<GameObject>("SelfDialogWindow");
         _canvasRect = GetComponent<Canvas>().GetComponent<RectTransform>();
 
         if (isDay)
@@ -92,6 +96,22 @@ public class InterfaceOnScene : MonoBehaviour
     public GameObject CreateDialogWindow(Transform character, string dialog)
     {
         GameObject dWindow = Instantiate(_dialogWindow, character.position, Quaternion.identity, transform);
+        dWindow.GetComponent<DialogWindow>().SetOptions(character, dialog);
+
+        return dWindow;
+    }
+    
+    public GameObject CreateBossDialogWindow(Transform character, string dialog)
+    {
+        GameObject dWindow = Instantiate(_bossDialogWindow, character.position, Quaternion.identity, transform);
+        dWindow.GetComponent<DialogWindow>().SetOptions(character, dialog);
+
+        return dWindow;
+    }
+    
+    public GameObject CreateSelfDialogWindow(Transform character, string dialog)
+    {
+        GameObject dWindow = Instantiate(_selfDialogWindow, character.position, Quaternion.identity, transform);
         dWindow.GetComponent<DialogWindow>().SetOptions(character, dialog);
 
         return dWindow;
