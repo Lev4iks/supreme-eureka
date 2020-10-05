@@ -446,7 +446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello! How was your day?
+  m_text: Hi, how is it man ?)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1292a03f4fbcda94790b8f268dcb847f, type: 2}
   m_sharedMaterial: {fileID: -7461952311140650741, guid: 1292a03f4fbcda94790b8f268dcb847f,
@@ -516,9 +516,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 491661058}
-    characterCount: 24
+    characterCount: 20
     spriteCount: 0
-    spaceCount: 4
+    spaceCount: 5
     wordCount: 5
     linkCount: 0
     lineCount: 2
@@ -861,6 +861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interface
       objectReference: {fileID: 0}
+    - target: {fileID: 9187086419610087181, guid: e33c5647af290dc48a7bcb4383f96f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9200941381095277395, guid: e33c5647af290dc48a7bcb4383f96f25,
         type: 3}
       propertyPath: m_TargetDisplay
@@ -934,7 +939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What's up ?(
+  m_text: Yeah try it, anybody needs some relax
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1292a03f4fbcda94790b8f268dcb847f, type: 2}
   m_sharedMaterial: {fileID: -7461952311140650741, guid: 1292a03f4fbcda94790b8f268dcb847f,
@@ -963,8 +968,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 23
+  m_fontSizeBase: 23
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -980,7 +985,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 27
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1004,12 +1009,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 900075164}
-    characterCount: 12
+    characterCount: 37
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 2
+    spaceCount: 6
+    wordCount: 7
     linkCount: 0
-    lineCount: 1
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1091,7 +1096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Well, it was... fine, I believe.
+  m_text: I tired, need some rest, i'll try to ask boss for it
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1292a03f4fbcda94790b8f268dcb847f, type: 2}
   m_sharedMaterial: {fileID: -7461952311140650741, guid: 1292a03f4fbcda94790b8f268dcb847f,
@@ -1120,8 +1125,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 21
+  m_fontSizeBase: 21
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1137,7 +1142,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 34
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1161,12 +1166,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 953962055}
-    characterCount: 32
+    characterCount: 52
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 11
+    wordCount: 12
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1477,12 +1482,12 @@ PrefabInstance:
     - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
       propertyPath: SceneName
-      value: '11: 00 PM'
+      value: 3:00 AM
       objectReference: {fileID: 0}
     - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
       propertyPath: NextScene
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8422727988282647046, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
