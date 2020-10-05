@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class InterfaceOnScene : MonoBehaviour
 {
@@ -24,8 +25,12 @@ public class InterfaceOnScene : MonoBehaviour
     private RectTransform _canvasRect;
     private TextMeshProUGUI _dayNameLabel;
 
+    public bool isDay;
     public float dayLabelTimeDisplay = 2f;
     public RectTransform CanvasRect => _canvasRect;
+
+    public Light2D mainLight;
+    
     public TMP_Text hours;
     public TMP_Text minutes;
 
@@ -34,11 +39,37 @@ public class InterfaceOnScene : MonoBehaviour
     {
         _dialogWindow = Resources.Load<GameObject>("DialogWindow");
         _canvasRect = GetComponent<Canvas>().GetComponent<RectTransform>();
+
+        if (isDay)
+        {
+            hours.SetText("10");
+            minutes.SetText("58");
+        }
+        else
+        {
+            hours.SetText("23");
+            minutes.SetText("45");
+        }
     }
 
-    private void Update()
+    public void SetTime(float time)
     {
-        
+        if (isDay)
+        {        
+            var h = Mathf.RoundToInt(time) / 60;
+            var m = Mathf.RoundToInt(time) % 60;
+
+            if (Mathf.Abs(18 - h) > 16)
+                mainLight.intensity = 0.8f;
+            
+            hours.SetText(Mathf.Abs(18 - h).ToString());
+            if (m == 0)
+                minutes.SetText("59");
+            else if (Mathf.Abs(60 - m) < 10)
+                minutes.SetText("0" + Mathf.Abs(60 - m).ToString());
+            else
+                minutes.SetText(Mathf.Abs(60 - m).ToString());
+        }
     }
 
     public void SetDayName(string name)
