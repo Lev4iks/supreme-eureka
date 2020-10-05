@@ -1379,12 +1379,17 @@ PrefabInstance:
     - target: {fileID: 950250722181313972, guid: 109ae94daa66ccd4bbbfcf2f886fac46,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.54
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 950250722181313972, guid: 109ae94daa66ccd4bbbfcf2f886fac46,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 954695091181507816, guid: 109ae94daa66ccd4bbbfcf2f886fac46,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: New job !
+      value: Crazy day...
       objectReference: {fileID: 0}
     - target: {fileID: 954695091181507822, guid: 109ae94daa66ccd4bbbfcf2f886fac46,
         type: 3}
@@ -1394,12 +1399,12 @@ PrefabInstance:
     - target: {fileID: 954695091181507823, guid: 109ae94daa66ccd4bbbfcf2f886fac46,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.86
+      value: -7.39
       objectReference: {fileID: 0}
     - target: {fileID: 954695091181507823, guid: 109ae94daa66ccd4bbbfcf2f886fac46,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.65
+      value: 4.04
       objectReference: {fileID: 0}
     - target: {fileID: 954695091181507823, guid: 109ae94daa66ccd4bbbfcf2f886fac46,
         type: 3}
@@ -1728,7 +1733,7 @@ PrefabInstance:
     - target: {fileID: 9187086419610087181, guid: e33c5647af290dc48a7bcb4383f96f25,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33c5647af290dc48a7bcb4383f96f25, type: 3}
