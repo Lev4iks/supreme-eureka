@@ -15,7 +15,6 @@ public class Movement : MonoBehaviour
     private Vector2 _lastDir;
     private Rigidbody2D _rb2D;
     private Animator _movementAnimator;
-    private float _movementSpeed = 0;
     private bool _isMoving = true;
 
     
