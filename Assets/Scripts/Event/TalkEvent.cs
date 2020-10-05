@@ -34,6 +34,7 @@ public class TalkEvent : Event, IInteraction
     {
         pointer.SetState(false);
         movement.DisableMovement();
+        GetComponentInParent<NPCPath>().SetMovement(false);
         
         //Stop time
         OfficeTimeManager.Instance.StopTime();
@@ -44,7 +45,10 @@ public class TalkEvent : Event, IInteraction
 
     private void EndDialog()
     {
+        isTalking = false;
         movement.EnableMovement();
+        GetComponentInParent<NPCPath>().SetMovement(true);
+        
         OfficeTimeManager.Instance.ResumeTime();
         base.Interact(); // Moves camera
         Destroy(gameObject);
