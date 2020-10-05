@@ -9,8 +9,8 @@
         PlayerBase.Instance.GetComponent<ThinkAction>().Think(dialog);
         player.SetInteraction(null);
         Destroy(gameObject);
-        
-        // Win code
+
+        OfficeTimeManager.Instance.isWinQuit = true;
     }
 
 }

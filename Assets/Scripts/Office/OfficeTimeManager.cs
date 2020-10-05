@@ -13,6 +13,8 @@ public class OfficeTimeManager : MonoBehaviour
     public float CrossFadeTime = 2;
     public Scenes NextScene;
     public string SceneName;
+    public bool isWinBoss = false;
+    public bool isWinQuit = false;
 
     private SceneCrossfade _sceneCrossfade;
     private ScenesManager _scenesManager;
@@ -37,6 +39,12 @@ public class OfficeTimeManager : MonoBehaviour
 
     void Update()
     {
+        if (isWinBoss) NextScene = Scenes.GoodEndScene;
+        if (isWinQuit)
+        {
+            NextScene = Scenes.GoodEndScene;
+            StartCoroutine(CrossFadeDuration());
+        }
         if (TimeForDay <= 0)
         {
             Time.timeScale = 1;

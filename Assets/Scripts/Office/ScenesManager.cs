@@ -7,17 +7,19 @@ using System;
 
 public enum Scenes
 {
-    day1 = 0,
-    day2 = 1,
-    day3 = 2,
-    day4 = 3,
-    day5 = 4,
+    Day1 = 0,
+    Day2 = 1,
+    Day3 = 2,
+    Day4 = 3,
+    Day5 = 4,
     NightChat1 = 5,
     NightChat2 = 6,
     NightChat3 = 7,
     NightChat4 = 8,
-    NightChat5 = 9,
-    EndScene = 10,
+    BadEndScene = 9,
+    GoodEndScene = 10,
+    StartScene = 11,
+    End
 }
 
 public class ScenesManager: MonoBehaviour

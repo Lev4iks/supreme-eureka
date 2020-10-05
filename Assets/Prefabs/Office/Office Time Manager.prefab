@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeForDay: 300
-  CrossFadeTime: 2
+  CrossFadeTime: 3
   NextScene: 1
   SceneName: 
 --- !u!114 &3404659357469758887

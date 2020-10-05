@@ -45,11 +45,7 @@ public class InterfaceOnScene : MonoBehaviour
             hours.SetText("10");
             minutes.SetText("58");
         }
-        else
-        {
-            hours.SetText("23");
-            minutes.SetText("45");
-        }
+        
     }
 
     public void SetTime(float time)
@@ -74,7 +70,8 @@ public class InterfaceOnScene : MonoBehaviour
 
     public void SetDayName(string name)
     {
-        _dayNameLabel.text = name;
+        if (_dayNameLabel)
+            _dayNameLabel.text = name;
     }
 
     public void TriggerDayLabel()
@@ -84,9 +81,12 @@ public class InterfaceOnScene : MonoBehaviour
 
     private IEnumerator LabelTime()
     {
-        _dayNameLabel.enabled = true;
-        yield return new WaitForSeconds(dayLabelTimeDisplay);
-        _dayNameLabel.enabled = false;
+        if (_dayNameLabel)
+        {
+            _dayNameLabel.enabled = true;
+            yield return new WaitForSeconds(dayLabelTimeDisplay);
+            _dayNameLabel.enabled = false;
+        }
     }
 
     public GameObject CreateDialogWindow(Transform character, string dialog)

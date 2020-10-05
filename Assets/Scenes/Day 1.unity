@@ -4606,7 +4606,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.0374589}
+  m_Size: {x: 1, y: 1.0374589}
   m_EdgeRadius: 0
 --- !u!4 &1976013298
 Transform:
@@ -4616,7 +4616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976013295}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.4730015, y: 6.1293817, z: 0}
+  m_LocalPosition: {x: -10.17, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1771811968}
@@ -5249,7 +5249,7 @@ PrefabInstance:
     - target: {fileID: 9187086419610087181, guid: e33c5647af290dc48a7bcb4383f96f25,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33c5647af290dc48a7bcb4383f96f25, type: 3}
@@ -5434,6 +5434,8 @@ MonoBehaviour:
   CrossFadeTime: 2
   NextScene: 5
   SceneName: Day 1
+  isWinBoss: 0
+  isWinQuit: 0
 --- !u!1001 &8447917398941429124
 PrefabInstance:
   m_ObjectHideFlags: 0
