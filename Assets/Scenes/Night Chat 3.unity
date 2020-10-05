@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1477,7 +1477,12 @@ PrefabInstance:
     - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
       propertyPath: SceneName
-      value: Night Chat 1
+      value: 3:00 AM
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
+        type: 3}
+      propertyPath: NextScene
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8422727988282647046, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}

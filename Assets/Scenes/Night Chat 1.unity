@@ -1477,7 +1477,7 @@ PrefabInstance:
     - target: {fileID: 8422727988282647041, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
       propertyPath: SceneName
-      value: Night Chat 1
+      value: 2:00 AM
       objectReference: {fileID: 0}
     - target: {fileID: 8422727988282647046, guid: 12194f1a80f434127b8e26df79b1c680,
         type: 3}
