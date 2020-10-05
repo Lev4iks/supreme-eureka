@@ -67,7 +67,7 @@ TextureImporter:
     second: Office_20
   - first:
       213: 6178177140494055213
-    second: Office_21
+    second: table_boss
   - first:
       213: -2673627073188852477
     second: Office_22
@@ -91,7 +91,7 @@ TextureImporter:
     second: Office_28
   - first:
       213: 3567690602317120075
-    second: Office_29
+    second: table
   - first:
       213: 3058448357577899230
     second: Office_30
@@ -100,7 +100,7 @@ TextureImporter:
     second: Office_31
   - first:
       213: -7699173226803961444
-    second: Office_32
+    second: table1
   - first:
       213: -5063575761237487500
     second: Office_33
@@ -109,7 +109,7 @@ TextureImporter:
     second: Office_34
   - first:
       213: -4852721505654418244
-    second: Office_35
+    second: table3
   - first:
       213: 5021126154178612424
     second: Office_36
@@ -142,7 +142,7 @@ TextureImporter:
     second: Office_45
   - first:
       213: -4662126662644518930
-    second: Office_46
+    second: table2
   - first:
       213: 5077968781194583031
     second: Office_47
@@ -331,7 +331,7 @@ TextureImporter:
     second: Office_20
   - first:
       213: 1871556483877621540
-    second: Office_21
+    second: table_boss
   - first:
       213: -7287120918585547803
     second: Office_22
@@ -355,7 +355,7 @@ TextureImporter:
     second: Office_28
   - first:
       213: -56033316027832945
-    second: Office_29
+    second: table
   - first:
       213: 1734123677638368472
     second: Office_30
@@ -364,7 +364,7 @@ TextureImporter:
     second: Office_31
   - first:
       213: -819266582156398477
-    second: Office_32
+    second: table1
   - first:
       213: 3205323054169879329
     second: Office_33
@@ -373,7 +373,7 @@ TextureImporter:
     second: Office_34
   - first:
       213: -7389147301751051541
-    second: Office_35
+    second: table3
   - first:
       213: -4374700717248860065
     second: Office_36
@@ -406,7 +406,7 @@ TextureImporter:
     second: Office_45
   - first:
       213: 4587594110479232282
-    second: Office_46
+    second: table2
   - first:
       213: 2082186555002349640
     second: Office_47
@@ -658,10 +658,10 @@ TextureImporter:
     second: Office_129
   - first:
       213: 7546536203538227521
-    second: Office_130
+    second: clock
   - first:
       213: 2248233011644751945
-    second: Office_131
+    second: lamp_stand
   - first:
       213: 1809947293702929002
     second: Office_132
@@ -871,10 +871,10 @@ TextureImporter:
     second: Office_129
   - first:
       213: 3081450326871243206
-    second: Office_130
+    second: clock
   - first:
       213: 6065856408855147281
-    second: Office_131
+    second: lamp_stand
   - first:
       213: 3022279547440059102
     second: Office_132
@@ -961,7 +961,7 @@ TextureImporter:
     second: Office_159
   - first:
       213: -6051611050867297610
-    second: Office_160
+    second: bufet_table
   - first:
       213: 6199721501519613885
     second: Office_161
@@ -979,25 +979,25 @@ TextureImporter:
     second: Office_165
   - first:
       213: 3479348461169142417
-    second: Office_166
+    second: coffe_machine
   - first:
       213: 425045495140889656
-    second: Office_167
+    second: cup_coffee
   - first:
       213: 1844532515659654913
-    second: Office_168
+    second: cup_coffee1
   - first:
       213: 3529995327475433683
-    second: Office_169
+    second: cup_empty
   - first:
       213: 4960787587681343966
-    second: Office_170
+    second: kettle
   - first:
       213: 4049165792572458405
-    second: Office_171
+    second: cookies
   - first:
       213: 8268557182417434089
-    second: Office_172
+    second: blackboard
   - first:
       213: -8375778366775674101
     second: Office_173
@@ -1006,31 +1006,31 @@ TextureImporter:
     second: Office_174
   - first:
       213: 6039489908062097813
-    second: Office_175
+    second: trash_can_empty
   - first:
       213: -4328472649507603318
-    second: Office_176
+    second: trash_can
   - first:
       213: 2125524154755273613
-    second: Office_177
+    second: bufet_table1
   - first:
       213: 3340311841165910462
-    second: Office_178
+    second: cup_empty1
   - first:
       213: -7101430616114178422
-    second: Office_179
+    second: cup_water
   - first:
       213: -3408709697506317982
-    second: Office_180
+    second: papers
   - first:
       213: 6522634656474789749
-    second: Office_181
+    second: papers1
   - first:
       213: -5631208808700759920
-    second: Office_182
+    second: papers2
   - first:
       213: -1042331247528224655
-    second: Office_183
+    second: papers3
   - first:
       213: 1682280294077252287
     second: Office_184
@@ -1042,40 +1042,40 @@ TextureImporter:
     second: Office_186
   - first:
       213: -8590786961599205841
-    second: Office_187
+    second: box
   - first:
       213: 3946453029793469715
-    second: Office_188
+    second: box1
   - first:
       213: -591954589039843860
-    second: Office_189
+    second: box2
   - first:
       213: -1790582262725582486
-    second: Office_190
+    second: box3
   - first:
       213: 5270525000558131418
-    second: Office_191
+    second: box4
   - first:
       213: 7043997889939847396
-    second: Office_192
+    second: folders
   - first:
       213: 3554722951682220922
-    second: Office_193
+    second: folders1
   - first:
       213: 4884294406070730826
-    second: Office_194
+    second: folders2
   - first:
       213: -2129061566836390996
-    second: Office_195
+    second: folders3
   - first:
       213: 8617924229916486043
-    second: Office_196
+    second: printer
   - first:
       213: -2594605370137806977
-    second: Office_197
+    second: printer1
   - first:
       213: 6637447601378974047
-    second: Office_198
+    second: printer_big
   - first:
       213: 8214361998681592607
     second: Office_199
@@ -1084,7 +1084,7 @@ TextureImporter:
     second: Office_159
   - first:
       213: -1042722882355782603
-    second: Office_160
+    second: bufet_table
   - first:
       213: -1870968271650620623
     second: Office_161
@@ -1102,25 +1102,25 @@ TextureImporter:
     second: Office_165
   - first:
       213: 2601541872381409176
-    second: Office_166
+    second: coffe_machine
   - first:
       213: -7830716786074700971
-    second: Office_167
+    second: cup_coffee
   - first:
       213: 2778805221191331947
-    second: Office_168
+    second: cup_coffee1
   - first:
       213: -3101460368566471806
-    second: Office_169
+    second: cup_empty
   - first:
       213: -92175667993843402
-    second: Office_170
+    second: kettle
   - first:
       213: -8958256141573789323
-    second: Office_171
+    second: cookies
   - first:
       213: -4629906691062025851
-    second: Office_172
+    second: blackboard
   - first:
       213: 5764200044274164269
     second: Office_173
@@ -1129,31 +1129,31 @@ TextureImporter:
     second: Office_174
   - first:
       213: 8489215118818628182
-    second: Office_175
+    second: trash_can_empty
   - first:
       213: -6490199498341503874
-    second: Office_176
+    second: trash_can
   - first:
       213: 6245766278942171875
-    second: Office_177
+    second: bufet_table1
   - first:
       213: -1509183749027945905
-    second: Office_178
+    second: cup_empty1
   - first:
       213: -1759440145070797273
-    second: Office_179
+    second: cup_water
   - first:
       213: 7555452902288867654
-    second: Office_180
+    second: papers
   - first:
       213: 2892991419264310313
-    second: Office_181
+    second: papers1
   - first:
       213: 7836485231588954735
-    second: Office_182
+    second: papers2
   - first:
       213: -2059739494483484197
-    second: Office_183
+    second: papers3
   - first:
       213: 4991843420433113843
     second: Office_184
@@ -1165,40 +1165,40 @@ TextureImporter:
     second: Office_186
   - first:
       213: -139821747741808000
-    second: Office_187
+    second: box
   - first:
       213: 9002296794498615831
-    second: Office_188
+    second: box1
   - first:
       213: 3434752316464237694
-    second: Office_189
+    second: box2
   - first:
       213: -2912500783875900190
-    second: Office_190
+    second: box3
   - first:
       213: -6237118271823528866
-    second: Office_191
+    second: box4
   - first:
       213: -7552104619076355470
-    second: Office_192
+    second: folders
   - first:
       213: -1088661289176116893
-    second: Office_193
+    second: folders1
   - first:
       213: 7738854042787677601
-    second: Office_194
+    second: folders2
   - first:
       213: 5508047359015403032
-    second: Office_195
+    second: folders3
   - first:
       213: -7042860271651602556
-    second: Office_196
+    second: printer
   - first:
       213: -1748773579786150808
-    second: Office_197
+    second: printer1
   - first:
       213: -1141323838535286056
-    second: Office_198
+    second: printer_big
   - first:
       213: -2706082570931665160
     second: Office_199
@@ -1207,16 +1207,16 @@ TextureImporter:
     second: Office_200
   - first:
       213: 8464819572234325382
-    second: Office_201
+    second: folders4
   - first:
       213: 9036446790606951929
-    second: Office_202
+    second: folders5
   - first:
       213: 1681973589138449626
-    second: Office_203
+    second: folders6
   - first:
       213: 756632999990219354
-    second: Office_204
+    second: folders7
   - first:
       213: 3447776147062949716
     second: Office_205
@@ -1225,10 +1225,10 @@ TextureImporter:
     second: Office_206
   - first:
       213: -8684115154613673070
-    second: Office_207
+    second: plant1
   - first:
       213: 2167446705624321921
-    second: Office_208
+    second: plant2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1767,7 +1767,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_21
+      name: table_boss
       rect:
         serializedVersion: 2
         x: 144
@@ -1935,7 +1935,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_29
+      name: table
       rect:
         serializedVersion: 2
         x: 80
@@ -1998,7 +1998,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_32
+      name: table1
       rect:
         serializedVersion: 2
         x: 128
@@ -2061,13 +2061,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_35
+      name: table3
       rect:
         serializedVersion: 2
         x: 176
-        y: 256
+        y: 224
         width: 16
-        height: 16
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2292,13 +2292,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_46
+      name: table2
       rect:
         serializedVersion: 2
         x: 160
-        y: 240
+        y: 208
         width: 16
-        height: 16
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4056,7 +4056,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_130
+      name: clock
       rect:
         serializedVersion: 2
         x: 0
@@ -4077,13 +4077,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_131
+      name: lamp_stand
       rect:
         serializedVersion: 2
         x: 16
-        y: 112
+        y: 96
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4686,12 +4686,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_160
+      name: bufet_table
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 16
+        width: 96
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4812,7 +4812,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_166
+      name: coffe_machine
       rect:
         serializedVersion: 2
         x: 96
@@ -4833,7 +4833,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_167
+      name: cup_coffee
       rect:
         serializedVersion: 2
         x: 112
@@ -4854,7 +4854,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_168
+      name: cup_coffee1
       rect:
         serializedVersion: 2
         x: 128
@@ -4875,7 +4875,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_169
+      name: cup_empty
       rect:
         serializedVersion: 2
         x: 144
@@ -4896,7 +4896,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_170
+      name: kettle
       rect:
         serializedVersion: 2
         x: 160
@@ -4917,7 +4917,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_171
+      name: cookies
       rect:
         serializedVersion: 2
         x: 176
@@ -4938,13 +4938,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_172
+      name: blackboard
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 16
-        height: 16
+        y: 32
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5001,7 +5001,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_175
+      name: trash_can_empty
       rect:
         serializedVersion: 2
         x: 48
@@ -5022,7 +5022,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_176
+      name: trash_can
       rect:
         serializedVersion: 2
         x: 64
@@ -5043,7 +5043,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_177
+      name: bufet_table1
       rect:
         serializedVersion: 2
         x: 80
@@ -5064,7 +5064,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_178
+      name: cup_empty1
       rect:
         serializedVersion: 2
         x: 96
@@ -5085,7 +5085,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_179
+      name: cup_water
       rect:
         serializedVersion: 2
         x: 112
@@ -5106,7 +5106,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_180
+      name: papers
       rect:
         serializedVersion: 2
         x: 128
@@ -5127,7 +5127,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_181
+      name: papers1
       rect:
         serializedVersion: 2
         x: 144
@@ -5148,7 +5148,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_182
+      name: papers2
       rect:
         serializedVersion: 2
         x: 160
@@ -5169,7 +5169,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_183
+      name: papers3
       rect:
         serializedVersion: 2
         x: 176
@@ -5253,7 +5253,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_187
+      name: box
       rect:
         serializedVersion: 2
         x: 48
@@ -5274,7 +5274,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_188
+      name: box1
       rect:
         serializedVersion: 2
         x: 64
@@ -5295,7 +5295,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_189
+      name: box2
       rect:
         serializedVersion: 2
         x: 80
@@ -5316,7 +5316,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_190
+      name: box3
       rect:
         serializedVersion: 2
         x: 96
@@ -5337,7 +5337,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_191
+      name: box4
       rect:
         serializedVersion: 2
         x: 112
@@ -5358,7 +5358,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_192
+      name: folders
       rect:
         serializedVersion: 2
         x: 128
@@ -5379,7 +5379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_193
+      name: folders1
       rect:
         serializedVersion: 2
         x: 144
@@ -5400,7 +5400,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_194
+      name: folders2
       rect:
         serializedVersion: 2
         x: 160
@@ -5421,7 +5421,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_195
+      name: folders3
       rect:
         serializedVersion: 2
         x: 176
@@ -5442,7 +5442,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_196
+      name: printer
       rect:
         serializedVersion: 2
         x: 0
@@ -5463,7 +5463,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_197
+      name: printer1
       rect:
         serializedVersion: 2
         x: 16
@@ -5484,13 +5484,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_198
+      name: printer_big
       rect:
         serializedVersion: 2
         x: 32
-        y: 16
-        width: 16
-        height: 16
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5547,7 +5547,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_201
+      name: folders4
       rect:
         serializedVersion: 2
         x: 128
@@ -5568,7 +5568,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_202
+      name: folders5
       rect:
         serializedVersion: 2
         x: 144
@@ -5589,7 +5589,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_203
+      name: folders6
       rect:
         serializedVersion: 2
         x: 160
@@ -5610,7 +5610,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_204
+      name: folders7
       rect:
         serializedVersion: 2
         x: 176
@@ -5673,7 +5673,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_207
+      name: plant1
       rect:
         serializedVersion: 2
         x: 64
@@ -5694,13 +5694,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Office_208
+      name: plant2
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
