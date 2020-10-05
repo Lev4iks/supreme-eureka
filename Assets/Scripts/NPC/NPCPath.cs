@@ -26,7 +26,7 @@ public class NPCPath : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
