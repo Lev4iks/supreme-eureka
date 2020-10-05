@@ -2020,6 +2020,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 674913137456346169, guid: 76a4ba868ff484e0d9200123d131bebe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1280005746745047414, guid: 63216596898e31f4a988f5c899223cc1,
+        type: 3}
+    - target: {fileID: 6478083825802867053, guid: 76a4ba868ff484e0d9200123d131bebe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.665
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691147700499899125, guid: 76a4ba868ff484e0d9200123d131bebe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5733122214508766428, guid: 63216596898e31f4a988f5c899223cc1,
+        type: 3}
     - target: {fileID: 8447917398918663571, guid: 76a4ba868ff484e0d9200123d131bebe,
         type: 3}
       propertyPath: m_Name
