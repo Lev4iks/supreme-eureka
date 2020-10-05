@@ -47,7 +47,7 @@ public class PlayerAnimations : MonoBehaviour
             //Copying
             case InteractionType.Copy:
                 {
-                    //
+                    animator.SetBool("Print", true);
                     break;
                 }
         }
