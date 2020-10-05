@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -9202765599425530469, guid: b6f945241a972474dbc8b6f583f2e51e,
+  m_Sprite: {fileID: 1977547213100517089, guid: 7c958a3adbb49ca42b8c95fb30bbe73c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    characterName: Arnold
     sentences:
     - Yolo!
     - How's it ?
