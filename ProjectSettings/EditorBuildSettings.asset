@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start Scene.unity
+    path: Assets/Scenes/StartScene.unity
     guid: 44f41af0d3df8e14eb1b258f1095d8f0
   - enabled: 1
     path: Assets/Scenes/Day1.unity
@@ -24,21 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Day5.unity
     guid: 49b76d0c78cb1400aa3625d9d633eecb
   - enabled: 1
-    path: Assets/Scenes/Night Chat 1.unity
+    path: Assets/Scenes/NightChat1.unity
     guid: 29b3c0e8c2b9d43aa9a8e542c857c73e
   - enabled: 1
-    path: Assets/Scenes/Good End Scene.unity
+    path: Assets/Scenes/GoodEndScene.unity
     guid: 119560ec15d60254ab2c48b541eada22
   - enabled: 1
-    path: Assets/Scenes/Bad End Scene.unity
+    path: Assets/Scenes/BadEndScene.unity
     guid: be1305554b657c04886880bb7398b1c1
   - enabled: 1
-    path: Assets/Scenes/Night Chat 2.unity
+    path: Assets/Scenes/NightChat2.unity
     guid: 2aee01565c549724ab8231de0740956b
   - enabled: 1
-    path: Assets/Scenes/Night Chat 3.unity
+    path: Assets/Scenes/NightChat3.unity
     guid: d428d163737aeca4bb6f5a3a2b2167eb
   - enabled: 1
-    path: Assets/Scenes/Night Chat 4.unity
+    path: Assets/Scenes/NightChat4.unity
     guid: a52a9d1c4a871e64ba8a539a87ccb158
   m_configObjects: {}
