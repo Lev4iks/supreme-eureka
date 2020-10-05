@@ -12,24 +12,22 @@ public class NPCPath : MonoBehaviour
     private float speed;
 
     [SerializeField] private Transform travelPointsParent;
-    private Transform[] _travelPoints;
+    public Transform[] _travelPoints;
 
     [SerializeField]
     private float standTime = 15f;
 
     private int _curentIndex = 0;
     private bool _reverseWay = false;
-    private bool _Moving = true;
+    private bool _moving = true;
     private bool _courantineHasStarted = false;
-    private Animator animator;
+    private Animator _animator;
 
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
-        _travelPoints = travelPointsParent.GetComponentsInChildren<Transform>();
+        _animator = GetComponent<Animator>();
     }
-
 
     // Update is called once per frame
     void FixedUpdate()
@@ -60,29 +58,35 @@ public class NPCPath : MonoBehaviour
 
         Vector3 dir = (_travelPoints[_curentIndex].position - transform.position).normalized;
 
-        animator.SetFloat("Horizontal", dir.x);
-        animator.SetFloat("Vertical", dir.y);
+        _animator.SetFloat("Horizontal", dir.x);
+        _animator.SetFloat("Vertical", dir.y);
 
-        if (_Moving)
+        if (_moving)
         {
             transform.position += dir * speed * Time.deltaTime;
-            animator.SetFloat("Speed", 1f);
+            _animator.SetFloat("Speed", 1f);
         }
         else
         {
-            animator.SetFloat("Speed", 0f);
+            _animator.SetFloat("Speed", 0f);
         }
         
     }
 
+    public void SetMovement(bool state)
+    {
+        _moving = state;
+    }
+    
     private IEnumerator StandTime()
     {
         _courantineHasStarted = true;
-        _Moving = false;
+        _moving = false;
 
         yield return new WaitForSeconds(standTime);
 
-        _Moving = true;
+        _moving = true;
         _courantineHasStarted = false;
     }
+    
 }

@@ -41,7 +41,7 @@ public class PlayerAnimations : MonoBehaviour
             //Speaking
             case InteractionType.Chat:
                 {
-                    //coming soon...
+                    animator.SetBool("Print", true);
                     break;
                 }
             //Copying

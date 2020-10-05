@@ -14,6 +14,7 @@ public class DialogManager : MonoBehaviour
     private void Start()
     {
         _dialog = GetComponentInParent<NPC>().dialog;
+        transform.position += new Vector3(1, 1);
     }
 
     public bool Talk()

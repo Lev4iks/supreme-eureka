@@ -32,7 +32,7 @@ public class EventManager : MonoBehaviour
 
     public void SwitchEvent()
     {
-        if (_currentIndex < 3)
+        if (_currentIndex < 2)
             _currentIndex++;
         else
             _currentIndex = 0;
