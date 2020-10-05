@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1902,7 +1902,7 @@ MonoBehaviour:
   TimeForDay: 480
   CrossFadeTime: 2
   NextScene: 8
-  SceneName: Day 320
+  SceneName: Day 322
   isWinBoss: 0
   isWinQuit: 0
 --- !u!1001 &8447917398941429124
