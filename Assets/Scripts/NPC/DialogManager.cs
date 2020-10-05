@@ -9,12 +9,11 @@ public class DialogManager : MonoBehaviour
     private int _index = 0;
     private GameObject _dWindow;
     private Dialog _dialog;
-    
+
 
     private void Start()
     {
         _dialog = GetComponentInParent<NPC>().dialog;
-        transform.position += new Vector3(1, 1);
     }
 
     public bool Talk()
@@ -23,7 +22,7 @@ public class DialogManager : MonoBehaviour
         if (_dialog.sentences.Length > _index) 
         {
             _dWindow = InterfaceOnScene.Instance.CreateDialogWindow
-                (transform, _dialog.characterName, _dialog.sentences[_index]);
+                (transform, _dialog.sentences[_index]);
             _index++;
             return true;
         }
@@ -34,7 +33,7 @@ public class DialogManager : MonoBehaviour
     public void StartDialog()
     {
         _dWindow = InterfaceOnScene.Instance.CreateDialogWindow
-            (transform, _dialog.characterName, _dialog.sentences[_index]);
+            (transform, _dialog.sentences[_index]);
         _index++;
     }
 

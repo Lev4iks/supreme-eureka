@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class DialogWindow : MonoBehaviour
 {
-    [SerializeField] private TMP_Text characterName;
     [SerializeField] private TMP_Text dialog;
 
     private Transform _character;
@@ -20,9 +19,8 @@ public class DialogWindow : MonoBehaviour
         _selfRect = GetComponent<RectTransform>();
     }
 
-    public void SetOptions(Transform character, string characterName, string dialog)
+    public void SetOptions(Transform character, string dialog)
     {
-        this.characterName.SetText(characterName);
         this.dialog.SetText(dialog);
         _character = character;
         _canvasRect = InterfaceOnScene.Instance.CanvasRect;
@@ -36,8 +34,10 @@ public class DialogWindow : MonoBehaviour
     private Vector2 WorldPointsToScreenTranslate(Transform world, RectTransform screen)
     {
         var sizeDelta = screen.sizeDelta;
+        var newPosition = world.transform.position + Vector3.up * 2.7f + Vector3.right * 2.1f;
         
-        Vector2 viewportPosition = _playerCamera.WorldToViewportPoint(world.transform.position);
+        
+        Vector2 viewportPosition = _playerCamera.WorldToViewportPoint(newPosition);
         Vector2 worldScreenPosition = new Vector3(
             ((viewportPosition.x * sizeDelta.x) - (sizeDelta.x * 0.5f)),
             ((viewportPosition.y * sizeDelta.y) - (sizeDelta.y * 0.5f)));
