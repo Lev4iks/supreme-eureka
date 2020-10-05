@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37a7554fc0d8194dadf91c5409d4e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventRange: 2
+  eventRange: 4
   boss: {fileID: 1059641484}
   dialogTime: 4
 --- !u!1 &877614327
