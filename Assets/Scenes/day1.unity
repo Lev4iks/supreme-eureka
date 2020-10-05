@@ -5823,6 +5823,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 538342654736653673, guid: 76a4ba868ff484e0d9200123d131bebe,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8915094
+      objectReference: {fileID: 0}
+    - target: {fileID: 538342654736653673, guid: 76a4ba868ff484e0d9200123d131bebe,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9783019
+      objectReference: {fileID: 0}
+    - target: {fileID: 538342654736653673, guid: 76a4ba868ff484e0d9200123d131bebe,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 573407714055690927, guid: 76a4ba868ff484e0d9200123d131bebe,
         type: 3}
       propertyPath: m_LocalPosition.z
