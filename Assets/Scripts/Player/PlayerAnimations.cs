@@ -62,5 +62,9 @@ public class PlayerAnimations : MonoBehaviour
     {
         animator.SetBool("Work", false);
     }
-    
+    public void StopPrinting()
+    {
+        animator.SetBool("Print", false);
+    }
+
 }

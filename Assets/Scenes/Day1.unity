@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 1520129451}
   - component: {fileID: 1520129450}
   - component: {fileID: 1520129452}
-  - component: {fileID: 1520129449}
+  - component: {fileID: 1520129453}
   m_Layer: 0
   m_Name: Printer
   m_TagString: Untagged
@@ -711,23 +711,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1520129449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520129448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 965c9b36654794d19bf048550d66c44b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventRange: 2
-  WorkTime: 5
-  interactSound: {fileID: 8300000, guid: 604fd468c42c04458a71ebfb14725c94, type: 3}
-  audioSource: {fileID: 1520129452}
-  chair: {fileID: 1059641484}
 --- !u!61 &1520129450
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -865,6 +848,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1520129453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520129448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834382ea2ab15411a9e51ffb58bebe65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventRange: 2
+  workTime: 5
+  interactSound: {fileID: 8300000, guid: 604fd468c42c04458a71ebfb14725c94, type: 3}
+  actionSound: {fileID: 8300000, guid: f7b66d3d97d4947b1932f7f14a169b46, type: 3}
+  audioSource: {fileID: 1520129452}
 --- !u!1 &1610641262
 GameObject:
   m_ObjectHideFlags: 0

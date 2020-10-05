@@ -31,7 +31,7 @@ public class CopyingEvent : Event
     public override void Interact()
     {
         audioSource.PlayOneShot(interactSound);
-        //playerAnimations.TriggerInteraction(InteractionType.Copy);
+        playerAnimations.TriggerInteraction(InteractionType.Copy);
         pointer.SetState(false);
 
         if (!_courantineHasStarted)
@@ -45,7 +45,7 @@ public class CopyingEvent : Event
         yield return new WaitForSeconds(workTime);
         
         movement.EnableMovement();
-        //playerAnimations.StopCopying(); 
+        playerAnimations.StopPrinting(); 
         _courantineHasStarted = false;
 
         eventManager.SwitchEvent();

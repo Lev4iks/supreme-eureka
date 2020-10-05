@@ -6,23 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Day 1.unity
+    path: Assets/Scenes/Start Scene.unity
+    guid: 44f41af0d3df8e14eb1b258f1095d8f0
+  - enabled: 1
+    path: Assets/Scenes/Day1.unity
     guid: 067e175f6a1744708ad784361bf68798
+  - enabled: 1
+    path: Assets/Scenes/Day2.unity
+    guid: bf80eae3a619d4412bf302050d18e164
+  - enabled: 1
+    path: Assets/Scenes/Day3.unity
+    guid: c08b9c178a2d5441287b1cde5d466845
+  - enabled: 1
+    path: Assets/Scenes/Day4.unity
+    guid: 85a4463f18f294f528605a847fac41de
+  - enabled: 1
+    path: Assets/Scenes/Day5.unity
+    guid: 49b76d0c78cb1400aa3625d9d633eecb
   - enabled: 1
     path: Assets/Scenes/Night Chat 1.unity
     guid: 29b3c0e8c2b9d43aa9a8e542c857c73e
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/Good End Scene.unity
+    guid: 119560ec15d60254ab2c48b541eada22
   - enabled: 1
     path: Assets/Scenes/Bad End Scene.unity
     guid: be1305554b657c04886880bb7398b1c1
