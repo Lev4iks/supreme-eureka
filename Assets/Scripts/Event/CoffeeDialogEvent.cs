@@ -1,13 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-[RequireComponent(typeof(AudioSource))]
-
-public class CoffeEvent : Event, IInteraction
+public class CoffeeDialogEvent : Event
 {
-    public float DrinkTime = 30f;
+    public float DrinkTime = 15f;
+    public float talkTime = 3f;
 
     [SerializeField]
     private AudioClip interactSound;
@@ -18,7 +15,19 @@ public class CoffeEvent : Event, IInteraction
 
     private Vector2 _savedPosition;
     private bool _courantineHasStarted = false;
-    
+
+    private Dialog _dialogFirst;
+    private Dialog _dialogSecond;
+    public GameObject npcFirst;
+    public GameObject npcSecond;
+
+
+    protected override void Start()
+    {
+        base.Start();
+        _dialogFirst = npcFirst.GetComponent<NPC>().dialog;
+        _dialogSecond = npcSecond.GetComponent<NPC>().dialog;
+    }
 
     public override void EventTrigger()
     {
@@ -50,7 +59,20 @@ public class CoffeEvent : Event, IInteraction
     {
         _courantineHasStarted = true;
         audioSource.PlayOneShot(actionSound);
-        yield return new WaitForSeconds(DrinkTime);
+        
+        GameObject fDialogWindow = InterfaceOnScene.Instance.CreateDialogWindow(npcFirst.transform, _dialogFirst.sentences[0]);
+        yield return new WaitForSeconds(talkTime);
+        Destroy(fDialogWindow);
+        
+        yield return new WaitForSeconds(1);
+
+        GameObject sDialogWindow =
+            InterfaceOnScene.Instance.CreateDialogWindow(npcSecond.transform, _dialogSecond.sentences[0]);
+        yield return new WaitForSeconds(talkTime);
+        Destroy(sDialogWindow);
+        
+        yield return new WaitForSeconds(1);
+        
 
         player.gameObject.transform.position = _savedPosition;
         movement.EnableMovement();
@@ -61,5 +83,4 @@ public class CoffeEvent : Event, IInteraction
         pointer.SetState(true);
         base.Interact(); // Moves camera
     }
-
 }
