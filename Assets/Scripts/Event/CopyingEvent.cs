@@ -1,13 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-[RequireComponent(typeof(AudioSource))]
-
-public class CoffeEvent : Event, IInteraction
+public class CopyingEvent : Event
 {
-    public float DrinkTime = 30f;
+    public float workTime = 15f;
 
     [SerializeField]
     private AudioClip interactSound;
@@ -35,7 +31,7 @@ public class CoffeEvent : Event, IInteraction
     public override void Interact()
     {
         audioSource.PlayOneShot(interactSound);
-        playerAnimations.TriggerInteraction(InteractionType.Drink);
+        //playerAnimations.TriggerInteraction(InteractionType.Copy);
         pointer.SetState(false);
 
         if (!_courantineHasStarted)
@@ -46,15 +42,15 @@ public class CoffeEvent : Event, IInteraction
     {
         _courantineHasStarted = true;
         audioSource.PlayOneShot(actionSound);
-        yield return new WaitForSeconds(DrinkTime);
+        yield return new WaitForSeconds(workTime);
         
         movement.EnableMovement();
-        playerAnimations.StopDrinking(); 
+        //playerAnimations.StopCopying(); 
         _courantineHasStarted = false;
 
         eventManager.SwitchEvent();
         pointer.SetState(true);
         base.Interact(); // Moves camera
     }
-
+    
 }
