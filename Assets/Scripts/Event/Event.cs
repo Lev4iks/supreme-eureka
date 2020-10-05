@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Event : MonoBehaviour, IInteraction
 {
-    private BoxCollider2D eventTrigger;
+    protected BoxCollider2D eventTrigger;
     protected bool isDone = false;
     protected Pointer pointer;
     protected EventManager eventManager;
@@ -23,6 +23,7 @@ public class Event : MonoBehaviour, IInteraction
         eventTrigger = GetComponent<BoxCollider2D>();
         eventTrigger.size = new Vector2(eventRange, eventRange);
         eventTrigger.isTrigger = true;
+        
         eventManager = OfficeTimeManager.Instance.GetComponent<EventManager>();
 
         player = PlayerBase.Instance;

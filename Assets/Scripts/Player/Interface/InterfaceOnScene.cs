@@ -51,11 +51,10 @@ public class InterfaceOnScene : MonoBehaviour
         _dayNameLabel.enabled = false;
     }
 
-    public GameObject CreateDialogWindow(Transform character, string characterName, string dialog)
+    public GameObject CreateDialogWindow(Transform character, string dialog)
     {
-        GameObject dWindow = Instantiate(_dialogWindow, 
-            transform.position, Quaternion.identity, transform);
-        dWindow.GetComponent<DialogWindow>().SetOptions(character, characterName, dialog);
+        GameObject dWindow = Instantiate(_dialogWindow, character.position, Quaternion.identity, transform);
+        dWindow.GetComponent<DialogWindow>().SetOptions(character, dialog);
 
         return dWindow;
     }
