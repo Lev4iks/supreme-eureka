@@ -7,8 +7,7 @@ public class CopyingEvent : Event
 
     [SerializeField]
     private AudioClip interactSound;
-    [SerializeField]
-    private AudioClip actionSound;
+
     [SerializeField]
     private AudioSource audioSource;
 
@@ -41,7 +40,6 @@ public class CopyingEvent : Event
     private IEnumerator WorkingTime()
     {
         _courantineHasStarted = true;
-        audioSource.PlayOneShot(actionSound);
         yield return new WaitForSeconds(workTime);
         
         movement.EnableMovement();

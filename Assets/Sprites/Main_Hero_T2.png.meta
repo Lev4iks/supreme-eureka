@@ -1,7 +1,619 @@
 fileFormatVersion: 2
 guid: d40499ecbd06177458d64d09d83722a1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1084173558452223048
+    second: Main_Hero_T2_0
+  - first:
+      213: -1078306407123443359
+    second: Main_Hero_T2_1
+  - first:
+      213: -8405341177968504049
+    second: Main_Hero_T2_2
+  - first:
+      213: -3634169023158036613
+    second: Main_Hero_T2_3
+  - first:
+      213: -394694907965535104
+    second: Main_Hero_T2_4
+  - first:
+      213: 2412785489316143780
+    second: Main_Hero_T2_5
+  - first:
+      213: 6874423980651302986
+    second: Main_Hero_T2_6
+  - first:
+      213: 929879923625789675
+    second: Main_Hero_T2_7
+  - first:
+      213: -4870587850489635214
+    second: Main_Hero_T2_8
+  - first:
+      213: 5672279966289561658
+    second: Main_Hero_T2_9
+  - first:
+      213: -1232849486469155352
+    second: Main_Hero_T2_10
+  - first:
+      213: 5597860612229493386
+    second: Main_Hero_T2_11
+  - first:
+      213: -1142101776710475697
+    second: Main_Hero_T2_12
+  - first:
+      213: 4727528232060222658
+    second: Main_Hero_T2_13
+  - first:
+      213: 8277495205934758828
+    second: Main_Hero_T2_14
+  - first:
+      213: 675587584876304713
+    second: Main_Hero_T2_15
+  - first:
+      213: -6818879679437665951
+    second: Main_Hero_T2_16
+  - first:
+      213: -662393681072315753
+    second: Main_Hero_T2_17
+  - first:
+      213: -3985355626465719444
+    second: Main_Hero_T2_18
+  - first:
+      213: -5388359577141023275
+    second: Main_Hero_T2_19
+  - first:
+      213: -7535196937326740061
+    second: Main_Hero_T2_20
+  - first:
+      213: 2916204848960744750
+    second: Main_Hero_T2_21
+  - first:
+      213: 4224052900199872600
+    second: Main_Hero_T2_22
+  - first:
+      213: 1114342980543225143
+    second: Main_Hero_T2_23
+  - first:
+      213: -5322307277615449485
+    second: Main_Hero_T2_24
+  - first:
+      213: 3856145794250090139
+    second: Main_Hero_T2_25
+  - first:
+      213: -6780033969013663327
+    second: Main_Hero_T2_26
+  - first:
+      213: 2093703213057435929
+    second: Main_Hero_T2_27
+  - first:
+      213: 9202259320876839351
+    second: Main_Hero_T2_28
+  - first:
+      213: -1014643140588634130
+    second: Main_Hero_T2_29
+  - first:
+      213: 2623792440044753437
+    second: Main_Hero_T2_30
+  - first:
+      213: -8280890667942362351
+    second: Main_Hero_T2_31
+  - first:
+      213: 3196655702082683465
+    second: Main_Hero_T2_32
+  - first:
+      213: -2097130095445746761
+    second: Main_Hero_T2_33
+  - first:
+      213: 8987291979448107798
+    second: Main_Hero_T2_34
+  - first:
+      213: -5607415530994674188
+    second: Main_Hero_T2_35
+  - first:
+      213: 2160181900541774555
+    second: Main_Hero_T2_36
+  - first:
+      213: 8622408918730966204
+    second: Main_Hero_T2_37
+  - first:
+      213: 6519336950320602824
+    second: Main_Hero_T2_38
+  - first:
+      213: 8728683492955656873
+    second: Main_Hero_T2_39
+  - first:
+      213: 1498093450653355618
+    second: Main_Hero_T2_40
+  - first:
+      213: -7885852967203767721
+    second: Main_Hero_T2_41
+  - first:
+      213: 1376657057061426743
+    second: Main_Hero_T2_42
+  - first:
+      213: 3122135323868503663
+    second: Main_Hero_T2_43
+  - first:
+      213: -3086046155712182671
+    second: Main_Hero_T2_44
+  - first:
+      213: -4380824771868428896
+    second: Main_Hero_T2_45
+  - first:
+      213: -1619187261338805603
+    second: Main_Hero_T2_46
+  - first:
+      213: 5070845349269503623
+    second: Main_Hero_T2_47
+  - first:
+      213: 6215310070883635129
+    second: Main_Hero_T2_48
+  - first:
+      213: 7612991714838342583
+    second: Main_Hero_T2_49
+  - first:
+      213: 5016725056175853507
+    second: Main_Hero_T2_50
+  - first:
+      213: 3005461114826717228
+    second: Main_Hero_T2_51
+  - first:
+      213: -8904975865485562454
+    second: Main_Hero_T2_52
+  - first:
+      213: 7701636788290230601
+    second: Main_Hero_T2_53
+  - first:
+      213: -932282265474981718
+    second: Main_Hero_T2_54
+  - first:
+      213: 4131682280621986393
+    second: Main_Hero_T2_55
+  - first:
+      213: -8454150564573428699
+    second: Main_Hero_T2_56
+  - first:
+      213: -5158725738506754743
+    second: Main_Hero_T2_57
+  - first:
+      213: -7091530454966226844
+    second: Main_Hero_T2_58
+  - first:
+      213: 6628311749184012889
+    second: Main_Hero_T2_59
+  - first:
+      213: -9086631060246906267
+    second: Main_Hero_T2_60
+  - first:
+      213: -5166565924175038971
+    second: Main_Hero_T2_61
+  - first:
+      213: 1971434943292643701
+    second: Main_Hero_T2_62
+  - first:
+      213: 5913274624136482692
+    second: Main_Hero_T2_63
+  - first:
+      213: -3542054993100394549
+    second: Main_Hero_T2_64
+  - first:
+      213: -4150210173089143937
+    second: Main_Hero_T2_65
+  - first:
+      213: 1503779050885579348
+    second: Main_Hero_T2_66
+  - first:
+      213: 2017666586966662489
+    second: Main_Hero_T2_67
+  - first:
+      213: -924729716047903554
+    second: Main_Hero_T2_68
+  - first:
+      213: 2877126167446595154
+    second: Main_Hero_T2_69
+  - first:
+      213: 6418494108144602760
+    second: Main_Hero_T2_70
+  - first:
+      213: 6184863184842760702
+    second: Main_Hero_T2_71
+  - first:
+      213: 2503974358354860984
+    second: Main_Hero_T2_72
+  - first:
+      213: -3868289156515436500
+    second: Main_Hero_T2_73
+  - first:
+      213: -4630973216107752543
+    second: Main_Hero_T2_74
+  - first:
+      213: -6224623938600273757
+    second: Main_Hero_T2_75
+  - first:
+      213: 1767127756201215230
+    second: Main_Hero_T2_76
+  - first:
+      213: 2748555860937799252
+    second: Main_Hero_T2_77
+  - first:
+      213: 6777329452582309632
+    second: Main_Hero_T2_78
+  - first:
+      213: 3387182396534460078
+    second: Main_Hero_T2_79
+  - first:
+      213: 5106409989692747775
+    second: Main_Hero_T2_80
+  - first:
+      213: -7915096889283962473
+    second: Main_Hero_T2_81
+  - first:
+      213: 6296961912081922049
+    second: Main_Hero_T2_82
+  - first:
+      213: -3808961443076525676
+    second: Main_Hero_T2_83
+  - first:
+      213: 5867638794172042616
+    second: Main_Hero_T2_84
+  - first:
+      213: 3543392690412625842
+    second: Main_Hero_T2_85
+  - first:
+      213: -5297498593544351366
+    second: Main_Hero_T2_86
+  - first:
+      213: -1979542036726643747
+    second: Main_Hero_T2_87
+  - first:
+      213: 3288970885468046147
+    second: Main_Hero_T2_88
+  - first:
+      213: 3962531495293132826
+    second: Main_Hero_T2_89
+  - first:
+      213: -5421488149259563363
+    second: Main_Hero_T2_90
+  - first:
+      213: -1817637538877596565
+    second: Main_Hero_T2_91
+  - first:
+      213: 439758709606860220
+    second: Main_Hero_T2_92
+  - first:
+      213: -4141426460290796477
+    second: Main_Hero_T2_93
+  - first:
+      213: -3460831996514664789
+    second: Main_Hero_T2_94
+  - first:
+      213: -6662131945085313251
+    second: Main_Hero_T2_95
+  - first:
+      213: 7414155652521754382
+    second: Main_Hero_T2_96
+  - first:
+      213: 1984280690792058756
+    second: Main_Hero_T2_97
+  - first:
+      213: 5842065899995130083
+    second: Main_Hero_T2_98
+  - first:
+      213: -5658437503146361506
+    second: Main_Hero_T2_99
+  - first:
+      213: -1593715925506634286
+    second: Main_Hero_T2_100
+  - first:
+      213: 7814730765072734499
+    second: Main_Hero_T2_101
+  - first:
+      213: 8086219530672425348
+    second: Main_Hero_T2_102
+  - first:
+      213: 5288113751770034717
+    second: Main_Hero_T2_103
+  - first:
+      213: 783326388500225817
+    second: Main_Hero_T2_104
+  - first:
+      213: 2756317475742133164
+    second: Main_Hero_T2_105
+  - first:
+      213: 7924658792278359468
+    second: Main_Hero_T2_106
+  - first:
+      213: -4231090890686888960
+    second: Main_Hero_T2_107
+  - first:
+      213: 6293177011061326966
+    second: Main_Hero_T2_108
+  - first:
+      213: 473336050310151165
+    second: Main_Hero_T2_109
+  - first:
+      213: -9040942353895343182
+    second: Main_Hero_T2_110
+  - first:
+      213: -664939747521998148
+    second: Main_Hero_T2_111
+  - first:
+      213: -7570894942016793776
+    second: Main_Hero_T2_112
+  - first:
+      213: 8497493787899469186
+    second: Main_Hero_T2_113
+  - first:
+      213: 8370726694330608549
+    second: Main_Hero_T2_114
+  - first:
+      213: -5381573568979251692
+    second: Main_Hero_T2_115
+  - first:
+      213: 6492874577644414019
+    second: Main_Hero_T2_116
+  - first:
+      213: 1233150787578444748
+    second: Main_Hero_T2_117
+  - first:
+      213: -9062059407714211322
+    second: Main_Hero_T2_118
+  - first:
+      213: 171771854502264981
+    second: Main_Hero_T2_119
+  - first:
+      213: 1503288065448502357
+    second: Main_Hero_T2_120
+  - first:
+      213: -6473465210440028455
+    second: Main_Hero_T2_121
+  - first:
+      213: 344977510916565321
+    second: Main_Hero_T2_122
+  - first:
+      213: -3973815055144739896
+    second: Main_Hero_T2_123
+  - first:
+      213: 5473778962935555386
+    second: Main_Hero_T2_124
+  - first:
+      213: 4431878205673563424
+    second: Main_Hero_T2_125
+  - first:
+      213: 6128290983390738878
+    second: Main_Hero_T2_126
+  - first:
+      213: -1893135994709083376
+    second: Main_Hero_T2_127
+  - first:
+      213: -6132458944377513618
+    second: Main_Hero_T2_128
+  - first:
+      213: 5621672038105264130
+    second: Main_Hero_T2_129
+  - first:
+      213: -1495649233361617905
+    second: Main_Hero_T2_130
+  - first:
+      213: 1659543478111415440
+    second: Main_Hero_T2_131
+  - first:
+      213: 6207226308695585066
+    second: Main_Hero_T2_132
+  - first:
+      213: 801860794340067225
+    second: Main_Hero_T2_133
+  - first:
+      213: -5064174603784109228
+    second: Main_Hero_T2_134
+  - first:
+      213: 7192090953619054420
+    second: Main_Hero_T2_135
+  - first:
+      213: 4710190126851626655
+    second: Main_Hero_T2_136
+  - first:
+      213: -2294850670957573177
+    second: Main_Hero_T2_137
+  - first:
+      213: 8955901178025803347
+    second: Main_Hero_T2_138
+  - first:
+      213: -6502645209751216251
+    second: Main_Hero_T2_139
+  - first:
+      213: -4631623402480586754
+    second: Main_Hero_T2_140
+  - first:
+      213: -8625760465064796691
+    second: Main_Hero_T2_141
+  - first:
+      213: -8263696160828591374
+    second: Main_Hero_T2_142
+  - first:
+      213: 5753931519271709131
+    second: Main_Hero_T2_143
+  - first:
+      213: -5204992137672609138
+    second: Main_Hero_T2_144
+  - first:
+      213: -7403684037219394351
+    second: Main_Hero_T2_145
+  - first:
+      213: -421662208971307742
+    second: Main_Hero_T2_146
+  - first:
+      213: -9089415658943016703
+    second: Main_Hero_T2_147
+  - first:
+      213: -2923899494082343240
+    second: Main_Hero_T2_148
+  - first:
+      213: -5231329500706446114
+    second: Main_Hero_T2_149
+  - first:
+      213: 447763282617773361
+    second: Main_Hero_T2_150
+  - first:
+      213: -5562071283936448649
+    second: Main_Hero_T2_151
+  - first:
+      213: 8444374457143058534
+    second: Main_Hero_T2_152
+  - first:
+      213: 9061169477508706527
+    second: Main_Hero_T2_153
+  - first:
+      213: -7993866496766523827
+    second: Main_Hero_T2_154
+  - first:
+      213: 5159856940038406652
+    second: Main_Hero_T2_155
+  - first:
+      213: 7768037142429481466
+    second: Main_Hero_T2_156
+  - first:
+      213: 8380733503289804902
+    second: Main_Hero_T2_157
+  - first:
+      213: -2793189327079069886
+    second: Main_Hero_T2_158
+  - first:
+      213: -2885042823774542241
+    second: Main_Hero_T2_159
+  - first:
+      213: 9102369815571780560
+    second: Main_Hero_T2_160
+  - first:
+      213: 8617901630886217331
+    second: Main_Hero_T2_161
+  - first:
+      213: -6605641162375213916
+    second: Main_Hero_T2_162
+  - first:
+      213: -4276730117617660282
+    second: Main_Hero_T2_163
+  - first:
+      213: 4530321798017085049
+    second: Main_Hero_T2_164
+  - first:
+      213: -2311212369648363916
+    second: Main_Hero_T2_165
+  - first:
+      213: 4979252262284556485
+    second: Main_Hero_T2_166
+  - first:
+      213: -5212503236418561091
+    second: Main_Hero_T2_167
+  - first:
+      213: 7265775539940550084
+    second: Main_Hero_T2_168
+  - first:
+      213: -1084739628414547510
+    second: Main_Hero_T2_169
+  - first:
+      213: 5534134307344360739
+    second: Main_Hero_T2_170
+  - first:
+      213: -8760873674423037942
+    second: Main_Hero_T2_171
+  - first:
+      213: -7339351766675994806
+    second: Main_Hero_T2_172
+  - first:
+      213: 5136070360597286149
+    second: Main_Hero_T2_173
+  - first:
+      213: 3985307260024990653
+    second: Main_Hero_T2_174
+  - first:
+      213: -5025313235081709403
+    second: Main_Hero_T2_175
+  - first:
+      213: 2745468356228098555
+    second: Main_Hero_T2_176
+  - first:
+      213: -7554522901744702067
+    second: Main_Hero_T2_177
+  - first:
+      213: -7217824630957882670
+    second: Main_Hero_T2_178
+  - first:
+      213: -4107239443696761112
+    second: Main_Hero_T2_179
+  - first:
+      213: -7006755045122683909
+    second: Main_Hero_T2_180
+  - first:
+      213: -4167285567217397061
+    second: Main_Hero_T2_181
+  - first:
+      213: 2775100608053995988
+    second: Main_Hero_T2_182
+  - first:
+      213: -6388551313953253068
+    second: Main_Hero_T2_183
+  - first:
+      213: -2224022899072574189
+    second: Main_Hero_T2_184
+  - first:
+      213: 1713044638963661949
+    second: Main_Hero_T2_185
+  - first:
+      213: 6948836417224894764
+    second: Main_Hero_T2_186
+  - first:
+      213: -7494251808339059572
+    second: Main_Hero_T2_187
+  - first:
+      213: 2004119916268466658
+    second: Main_Hero_T2_188
+  - first:
+      213: -3419584413809124787
+    second: Main_Hero_T2_189
+  - first:
+      213: 3161769904064388578
+    second: Main_Hero_T2_190
+  - first:
+      213: -3012175590024926735
+    second: Main_Hero_T2_191
+  - first:
+      213: 1405866452332396210
+    second: Main_Hero_T2_192
+  - first:
+      213: 8471115179005623132
+    second: Main_Hero_T2_193
+  - first:
+      213: -913652087850179938
+    second: Main_Hero_T2_194
+  - first:
+      213: -1096677433348344392
+    second: Main_Hero_T2_195
+  - first:
+      213: -8486004281191481707
+    second: Main_Hero_T2_196
+  - first:
+      213: 4556000595026006287
+    second: Main_Hero_T2_197
+  - first:
+      213: -121264897122259891
+    second: Main_Hero_T2_198
+  - first:
+      213: 928723407765200642
+    second: Main_Hero_T2_199
+  - first:
+      213: 125345577132787734
+    second: Main_Hero_T2_200
+  - first:
+      213: 1370334910500325613
+    second: Main_Hero_T2_201
+  - first:
+      213: 2092369448364711796
+    second: Main_Hero_T2_202
+  - first:
+      213: 422080635230781956
+    second: Main_Hero_T2_203
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +643,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +652,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +675,31 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -73,7 +709,1078 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Main_Hero_T2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c7a627b12cb0f00800000000000000
+      internalID: 1084173558452223048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161216c29061901f0800000000000000
+      internalID: -1078306407123443359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0359376bba3a5b80800000000000000
+      internalID: -8405341177968504049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77dfe03786d09dc0800000000000000
+      internalID: -3634169023158036613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c0f088213c58af0800000000000000
+      internalID: -394694907965535104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2e7e97e9feb7120800000000000000
+      internalID: 2412785489316143780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40d52a203cd66f50800000000000000
+      internalID: 6874423980651302986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be88b732dd897ec00800000000000000
+      internalID: 929879923625789675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e5b3cc722386cb0800000000000000
+      internalID: -4870587850489635214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a380149839cf7be40800000000000000
+      internalID: 5672279966289561658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5bb798ce904eee0800000000000000
+      internalID: -1232849486469155352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82f61e61989fad40800000000000000
+      internalID: 5597860612229493386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4064d53c707620f0800000000000000
+      internalID: -1142101776710475697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc749921ed8b9140800000000000000
+      internalID: 4727528232060222658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab7db3a8029fd270800000000000000
+      internalID: 8277495205934758828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949573b345b206900800000000000000
+      internalID: 675587584876304713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1690dfc3f097e51a0800000000000000
+      internalID: -6818879679437665951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792a832e474bec6f0800000000000000
+      internalID: -662393681072315753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b08ec4c2c21b8c0800000000000000
+      internalID: -3985355626465719444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd6f6a6383b835b0800000000000000
+      internalID: -5388359577141023275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad37060f4a9d6790800000000000000
+      internalID: -7535196937326740061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2da3920cd0787820800000000000000
+      internalID: 2916204848960744750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8583fd49bb9de9a30800000000000000
+      internalID: 4224052900199872600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d9a396901f67f00800000000000000
+      internalID: 1114342980543225143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a3144dabd5326b0800000000000000
+      internalID: -5322307277615449485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96a46c4b28c38530800000000000000
+      internalID: 3856145794250090139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9dbdff60b78e1a0800000000000000
+      internalID: -6780033969013663327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919e167baf35e0d10800000000000000
+      internalID: 2093703213057435929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b134efb81ef4bf70800000000000000
+      internalID: 9202259320876839351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef7d6f70734be1f0800000000000000
+      internalID: -1014643140588634130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d121931a255996420800000000000000
+      internalID: 2623792440044753437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113c271cfcd541d80800000000000000
+      internalID: -8280890667942362351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9428dd7ac6dcc5c20800000000000000
+      internalID: 3196655702082683465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbdc2d0a4f75e2e0800000000000000
+      internalID: -2097130095445746761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613c8b7407649bc70800000000000000
+      internalID: 8987291979448107798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5dd0fa8457e22b0800000000000000
+      internalID: -5607415530994674188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda45005ef18afd10800000000000000
+      internalID: 2160181900541774555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb48e156a33f8a770800000000000000
+      internalID: 8622408918730966204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce10f65a66597a50800000000000000
+      internalID: 6519336950320602824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2107ae363822970800000000000000
+      internalID: 8728683492955656873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e488e5e0c4ac410800000000000000
+      internalID: 1498093450653355618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75afbd2e182df8290800000000000000
+      internalID: -7885852967203767721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7365eafac4eda1310800000000000000
+      internalID: 1376657057061426743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e91e7098d045b20800000000000000
+      internalID: 3122135323868503663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176c0583f592c25d0800000000000000
+      internalID: -3086046155712182671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5fc81a41f2433c0800000000000000
+      internalID: -4380824771868428896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a101fb3cd7789e0800000000000000
+      internalID: -1619187261338805603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e762a8af24f5640800000000000000
+      internalID: 5070845349269503623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf4def4497314650800000000000000
+      internalID: 6215310070883635129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb6ee811a7c6a960800000000000000
+      internalID: 7612991714838342583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Hero_T2_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfc92ddbdcfe9540800000000000000
+      internalID: 5016725056175853507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
