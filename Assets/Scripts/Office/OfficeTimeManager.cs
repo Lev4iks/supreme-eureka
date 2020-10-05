@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,14 +9,14 @@ using UnityEngine;
 public class OfficeTimeManager : MonoBehaviour
 {
     public static OfficeTimeManager Instance;
-    public float TimeForDay = 300f;
+    public float TimeForDay = 480f;
     public float CrossFadeTime = 2;
     public Scenes NextScene;
     public string SceneName;
 
     private SceneCrossfade _sceneCrossfade;
     private ScenesManager _scenesManager;
-    private bool _timeStopped = true;
+    private bool _timeStopped = false;
 
     #region Singleton
     void Awake()
@@ -43,8 +44,14 @@ public class OfficeTimeManager : MonoBehaviour
         }
         else if (!_timeStopped)
         {
-            TimeForDay -= Time.deltaTime;
+            TimeForDay -= Time.deltaTime * 2;
         }
+    }
+
+    private void LateUpdate()
+    {
+        if (!_timeStopped && InterfaceOnScene.Instance)
+            InterfaceOnScene.Instance.SetTime(TimeForDay);
     }
 
     private IEnumerator CrossFadeDuration()

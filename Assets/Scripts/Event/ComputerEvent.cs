@@ -44,7 +44,7 @@ public class ComputerEvent : Event,IInteraction
 
         pointer.SetState(false);
 
-        Time.timeScale = 2;
+        Time.timeScale = 4;
         OfficeTimeManager.Instance.ResumeTime();
 
         coroutine = WorkingTime(WorkTime);
