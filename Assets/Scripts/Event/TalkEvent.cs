@@ -56,7 +56,7 @@ public class TalkEvent : Event, IInteraction
 
     private void Update()
     {
-        if (isTalking && Input.GetKeyDown(KeyCode.E))
+        if (isTalking && Input.GetKeyDown(KeyCode.F))
             if (!_dialogManager.Talk())
                 EndDialog();
     }

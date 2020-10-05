@@ -16,10 +16,15 @@ public class ComputerEvent : Event,IInteraction
     [SerializeField]
     private AudioClip interactSound;
     
-    [SerializeField]
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private GameObject chair;
 
 
+    private void SetChairVisible(bool state)
+    {
+        chair.SetActive(state);
+    }
+    
     public override void EventTrigger()
     {
         pointer.SetPointer(PointerType.FButton);
@@ -52,6 +57,7 @@ public class ComputerEvent : Event,IInteraction
 
     private IEnumerator WorkingTime(float waitTime)
     {
+        SetChairVisible(false);
         _courantineHasStarted = true;
         movement.DisableMovement();
 
@@ -66,7 +72,9 @@ public class ComputerEvent : Event,IInteraction
         _courantineHasStarted = false;
 
         eventManager.SwitchEvent();
+        pointer.SetState(true);
         base.Interact(); // Moves camera
+        SetChairVisible(true);
     }
     
 }

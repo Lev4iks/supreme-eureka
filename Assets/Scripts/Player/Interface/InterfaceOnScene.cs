@@ -26,12 +26,19 @@ public class InterfaceOnScene : MonoBehaviour
 
     public float dayLabelTimeDisplay = 2f;
     public RectTransform CanvasRect => _canvasRect;
+    public TMP_Text hours;
+    public TMP_Text minutes;
 
 
     private void Start()
     {
         _dialogWindow = Resources.Load<GameObject>("DialogWindow");
         _canvasRect = GetComponent<Canvas>().GetComponent<RectTransform>();
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void SetDayName(string name)
