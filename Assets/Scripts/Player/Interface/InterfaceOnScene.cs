@@ -32,7 +32,8 @@ public class InterfaceOnScene : MonoBehaviour
     public RectTransform CanvasRect => _canvasRect;
 
     public Light2D mainLight;
-    
+    public float nightIntensity = 0.7f;
+    [Space]
     public TMP_Text hours;
     public TMP_Text minutes;
 
@@ -52,6 +53,12 @@ public class InterfaceOnScene : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+    }
+
     public void SetTime(float time)
     {
         if (isDay)
@@ -60,11 +67,11 @@ public class InterfaceOnScene : MonoBehaviour
             var m = Mathf.RoundToInt(time) % 60;
 
             if (Mathf.Abs(18 - h) > 16)
-                mainLight.intensity = 0.8f;
+                mainLight.intensity = nightIntensity;
             
             hours.SetText(Mathf.Abs(18 - h).ToString());
             if (m == 0)
-                minutes.SetText("59");
+                minutes.SetText("00");
             else if (Mathf.Abs(60 - m) < 10)
                 minutes.SetText("0" + Mathf.Abs(60 - m).ToString());
             else

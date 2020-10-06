@@ -43,6 +43,8 @@ public class CoffeeDialogEvent : Event
 
     public override void Interact()
     {
+        npcFirst.GetComponentInChildren<GameObject>().SetActive(true);
+        npcSecond.GetComponentInChildren<GameObject>().SetActive(true);
         audioSource.PlayOneShot(interactSound);
         playerAnimations.TriggerInteraction(InteractionType.Drink);
         pointer.SetState(false);

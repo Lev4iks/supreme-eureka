@@ -68,7 +68,7 @@ public class DialogWindow : MonoBehaviour
     private Vector2 BossPointsToScreenTranslate(Transform world, RectTransform screen)
     {
         var sizeDelta = screen.sizeDelta;
-        var newPosition = world.transform.position + Vector3.down * 8f + Vector3.right * 4f;
+        var newPosition = world.transform.position + Vector3.down * 3f + Vector3.right * 4f;
         
         
         Vector2 viewportPosition = _playerCamera.WorldToViewportPoint(newPosition);

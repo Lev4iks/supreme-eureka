@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -404,10 +404,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809903731}
-  - component: {fileID: 809903733}
   - component: {fileID: 809903732}
+  - component: {fileID: 809903733}
   m_Layer: 0
-  m_Name: HiddenBossEvent
+  m_Name: BossFinalEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -421,7 +421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809903730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.48, y: 2.51, z: 0}
+  m_LocalPosition: {x: -6.48, y: 5.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1255467121}
@@ -462,12 +462,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 809903730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c37a7554fc0d8194dadf91c5409d4e98, type: 3}
+  m_Script: {fileID: 11500000, guid: 20f4552a152da024290d1086a8ab6866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventRange: 2
-  boss: {fileID: 1059641484}
-  dialogTime: 4
+  eventRange: 4
+  boss: {fileID: 1582257732}
+  dialogTime: 3
 --- !u!1001 &816800794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -579,107 +579,6 @@ Transform:
   m_Father: {fileID: 339810899}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1059641483
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 232863683358329169, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3509335796167597516, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_Name
-      value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159464195553059836, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7236416313265460130, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: dialog.sentences.Array.data[0]
-      value: You again ?
-      objectReference: {fileID: 0}
-    - target: {fileID: 7236416313265460130, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: dialog.sentences.Array.data[1]
-      value: Get to work ! I won't repeat it again.
-      objectReference: {fileID: 0}
-    - target: {fileID: 7236416313265460130, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: dialog.sentences.Array.data[2]
-      value: I'm over it! You're fired!
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176329023379789680, guid: f51290dd52663514e8dd253ad2e9cbd0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 69281205, guid: f51290dd52663514e8dd253ad2e9cbd0, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: f51290dd52663514e8dd253ad2e9cbd0, type: 3}
---- !u!1 &1059641484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3509335796167597516, guid: f51290dd52663514e8dd253ad2e9cbd0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1059641483}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1134393472
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,7 +658,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1255467120
 GameObject:
@@ -856,6 +755,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1582257731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1264267325252191413, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264267325252191413, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: Get to work ! I won't repeat it again.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264267325252191413, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[2]
+      value: I'm over it! You're fired!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264267325252191413, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: You again ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638177862407992555, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995851484998142683, guid: 7033cc51901101246a84ed945a4f9307,
+        type: 3}
+      propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7033cc51901101246a84ed945a4f9307, type: 3}
+--- !u!1 &1582257732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4995851484998142683, guid: 7033cc51901101246a84ed945a4f9307,
+    type: 3}
+  m_PrefabInstance: {fileID: 1582257731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1625535912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4235563194821340004, guid: 96d9b7ca206c342bfb92c4dbd81aca06,
@@ -1036,13 +1030,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1863610697}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18742637f1cf9c4eb27d4900c388c7a, type: 3}
+  m_Script: {fileID: 11500000, guid: ca64c56ea8d74ff408e3c051032cab2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   eventRange: 2
   dialog:
     sentences:
-    - If I quit, I'll be fired... But I don't bother.
+    - To hell with all of it. Meet me, World!
 --- !u!61 &1863610700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1145,7 +1139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventRange: 2
-  DrinkTime: 5
+  DrinkTime: 8
   interactSound: {fileID: 8300000, guid: 69acd3c8d32aa42bcbfbe7c219b5bf78, type: 3}
   actionSound: {fileID: 8300000, guid: bfe33e9fd8fcc4c12bd3adf4c5f43c9a, type: 3}
   audioSource: {fileID: 1976013299}
@@ -1449,6 +1443,7 @@ MonoBehaviour:
   - {fileID: 1976013295}
   PrinterArray:
   - {fileID: 816800796}
+  specialEventCoffee: {fileID: 0}
 --- !u!1001 &5487363981025040036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1665,7 +1660,7 @@ MonoBehaviour:
   TimeForDay: 480
   CrossFadeTime: 2
   NextScene: 9
-  SceneName: ' Lost the Count'
+  SceneName: Lost track of time
   isWinBoss: 0
   isWinQuit: 0
 --- !u!1001 &8447917398941429124
@@ -1675,6 +1670,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 538342654736653673, guid: 76a4ba868ff484e0d9200123d131bebe,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8447917398827307521, guid: 76a4ba868ff484e0d9200123d131bebe,
         type: 3}
       propertyPath: m_Color.r

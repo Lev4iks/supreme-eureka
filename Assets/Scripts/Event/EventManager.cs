@@ -13,6 +13,9 @@ public class EventManager : MonoBehaviour
     [SerializeField]
     List<GameObject> PrinterArray;
 
+    public GameObject specialEventCoffee;
+
+    private bool _specialEventCoffeeIsDone = false;
     private int _currentIndex = 0;
 
     
@@ -27,6 +30,9 @@ public class EventManager : MonoBehaviour
         
         for (int i = 0; i < PrinterArray.Count; i++)
             PrinterArray[i].SetActive(false);
+        
+        if (specialEventCoffee != null)
+            specialEventCoffee.SetActive(false);
 
     }
 
@@ -51,22 +57,33 @@ public class EventManager : MonoBehaviour
 
             case 1:
                 {
-
-
+                    
                     PrinterArray[0].SetActive(false);
                     PCArray[0].SetActive(false);
+                    
+                    if (specialEventCoffee != null && !_specialEventCoffeeIsDone)
+                    {
+                        specialEventCoffee.SetActive(true);
+                        _specialEventCoffeeIsDone = true;
+                        break;
+                    }
+                    
                     CoffeArray[0].SetActive(true);
                     break;
                 }
 
             case 2:
                 {
+                    if (specialEventCoffee != null)
+                        specialEventCoffee.SetActive(false);
 
-                    PCArray[0].SetActive(false);
                     CoffeArray[0].SetActive(false);
+                    PCArray[0].SetActive(false);
                     PrinterArray[0].SetActive(true);
                     break;
                 }
         }
     }
+    
+    
 }

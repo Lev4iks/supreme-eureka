@@ -953,5 +953,6 @@ MonoBehaviour:
   isDay: 1
   dayLabelTimeDisplay: 2
   mainLight: {fileID: 0}
+  nightIntensity: 0.7
   hours: {fileID: 5756807944155025326}
   minutes: {fileID: 5564151358719540162}

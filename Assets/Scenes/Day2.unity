@@ -1153,7 +1153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventRange: 2
-  DrinkTime: 5
+  DrinkTime: 8
   interactSound: {fileID: 8300000, guid: 69acd3c8d32aa42bcbfbe7c219b5bf78, type: 3}
   actionSound: {fileID: 8300000, guid: bfe33e9fd8fcc4c12bd3adf4c5f43c9a, type: 3}
   audioSource: {fileID: 1976013299}
@@ -1471,6 +1471,7 @@ MonoBehaviour:
   - {fileID: 1976013295}
   PrinterArray:
   - {fileID: 1786212207}
+  specialEventCoffee: {fileID: 0}
 --- !u!114 &4484095171205401208
 MonoBehaviour:
   m_ObjectHideFlags: 0
