@@ -246,4 +246,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 6873461971753577845}
-  dialogWindowType: 0
+  dialogWindowType: 1

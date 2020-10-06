@@ -848,6 +848,11 @@ PrefabInstance:
       propertyPath: dialog.sentences.Array.data[0]
       value: Hey, a new face in our boring office !
       objectReference: {fileID: 0}
+    - target: {fileID: 208367262201995726, guid: 9064eee072efd4368b10db635d66da3a,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: sssss
+      objectReference: {fileID: 0}
     - target: {fileID: 2383169436095877520, guid: 9064eee072efd4368b10db635d66da3a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -942,12 +947,12 @@ PrefabInstance:
         type: 3}
       propertyPath: _travelPoints.Array.data[5]
       value: 
-      objectReference: {fileID: 86216777}
+      objectReference: {fileID: 1824785498}
     - target: {fileID: 7388347191816378329, guid: 9064eee072efd4368b10db635d66da3a,
         type: 3}
       propertyPath: _travelPoints.Array.data[6]
       value: 
-      objectReference: {fileID: 1824785498}
+      objectReference: {fileID: 86216777}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9064eee072efd4368b10db635d66da3a, type: 3}
 --- !u!1 &1396643712
@@ -1628,7 +1633,7 @@ PrefabInstance:
     - target: {fileID: 324773170489087931, guid: 0e63c2d03f0ec421289236d05df79adf,
         type: 3}
       propertyPath: baseMovementSpeed
-      value: 2
+      value: 5.49
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2017999213389864570, guid: 0e63c2d03f0ec421289236d05df79adf, type: 3}

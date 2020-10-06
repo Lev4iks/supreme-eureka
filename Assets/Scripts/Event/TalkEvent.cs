@@ -9,6 +9,9 @@ public class TalkEvent : Event, IInteraction
     private Dialog _dialog;
     private DialogManager _dialogManager;
     private Transform _character;
+    
+    // Dirty
+    private int _updateFrame = 0;
 
     protected override void Start()
     {
@@ -34,7 +37,7 @@ public class TalkEvent : Event, IInteraction
     {
         pointer.SetState(false);
         movement.DisableMovement();
-        GetComponentInParent<NPCPath>().SetMovement(false);
+        GetComponentInParent<NPCPath>()?.SetMovement(false);
         
         //Stop time
         OfficeTimeManager.Instance.StopTime();
@@ -56,8 +59,15 @@ public class TalkEvent : Event, IInteraction
     private void Update()
     {
         if (isTalking && Input.GetKeyDown(KeyCode.F))
-            if (!_dialogManager.Talk())
-                EndDialog();
+        {
+            if (_updateFrame == 0)
+                _updateFrame++;
+            else
+            {
+                if (!_dialogManager.Talk())
+                    EndDialog();       
+            }
+        }
     }
 
     public override void Interact()

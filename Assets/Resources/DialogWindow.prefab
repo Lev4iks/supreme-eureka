@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 9001672389120221691}
-  dialogWindowType: 0
+  dialogWindowType: 2
 --- !u!1 &9001672389120221669
 GameObject:
   m_ObjectHideFlags: 0

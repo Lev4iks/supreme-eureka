@@ -49,7 +49,7 @@ public class InterfaceOnScene : MonoBehaviour
             hours.SetText("10");
             minutes.SetText("58");
         }
-        
+
     }
 
     public void SetTime(float time)
@@ -97,7 +97,7 @@ public class InterfaceOnScene : MonoBehaviour
     {
         GameObject dWindow = Instantiate(_dialogWindow, character.position, Quaternion.identity, transform);
         dWindow.GetComponent<DialogWindow>().SetOptions(character, dialog);
-
+        
         return dWindow;
     }
     

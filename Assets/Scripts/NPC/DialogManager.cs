@@ -9,12 +9,7 @@ public class DialogManager : MonoBehaviour
     private int _index = 0;
     private GameObject _dWindow;
     private Dialog _dialog;
-
-
-    private void Start()
-    {
-        _dialog = GetComponentInParent<NPC>().dialog;
-    }
+    
 
     public bool Talk()
     {
@@ -32,8 +27,8 @@ public class DialogManager : MonoBehaviour
 
     public void StartDialog()
     {
-        _dWindow = InterfaceOnScene.Instance.CreateDialogWindow
-            (transform, _dialog.sentences[_index]);
+        _dialog = GetComponentInParent<NPC>().dialog;
+        _dWindow = InterfaceOnScene.Instance.CreateDialogWindow(transform, _dialog.sentences[_index]);
         _index++;
     }
 
