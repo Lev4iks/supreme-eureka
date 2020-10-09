@@ -590,13 +590,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 5756807944155025326}
-    characterCount: 2
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -812,13 +812,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 5564151358719540162}
-    characterCount: 2
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -950,6 +950,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0b6b5546d3549bfa18afa5ca63c647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogWindow: {fileID: 9001672388348700233, guid: 632a3c73d22b6ec459c1573d0ba2db05,
+    type: 3}
+  bossDialogWindow: {fileID: 6873461973598841543, guid: 58cb74cecc67e3a4199e8bb8ab3b3b49,
+    type: 3}
+  selfDialogWindow: {fileID: 233577048207771693, guid: 05d54b22990709746979999f5f207810,
+    type: 3}
   isDay: 1
   dayLabelTimeDisplay: 2
   mainLight: {fileID: 0}

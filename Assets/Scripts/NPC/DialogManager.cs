@@ -17,7 +17,7 @@ public class DialogManager : MonoBehaviour
         if (_dialog.sentences.Length > _index) 
         {
             _dWindow = InterfaceOnScene.Instance.CreateDialogWindow
-                (transform, _dialog.sentences[_index]);
+                        (transform, _dialog.sentences[_index]);
             _index++;
             return true;
         }
@@ -28,7 +28,8 @@ public class DialogManager : MonoBehaviour
     public void StartDialog()
     {
         _dialog = GetComponentInParent<NPC>().dialog;
-        _dWindow = InterfaceOnScene.Instance.CreateDialogWindow(transform, _dialog.sentences[_index]);
+        _dWindow = InterfaceOnScene.Instance.CreateDialogWindow
+                    (transform, _dialog.sentences[_index]);
         _index++;
     }
 

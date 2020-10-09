@@ -16,7 +16,6 @@ public class TalkEvent : Event, IInteraction
     protected override void Start()
     {
         base.Start();
-        pointer.SetPointer(PointerType.FButton);
         pointer.SetState(false);
         _dialogManager = GetComponent<DialogManager>();
     }

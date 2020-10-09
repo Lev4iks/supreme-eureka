@@ -13,8 +13,11 @@ public class Pointer : MonoBehaviour
     // Up - true, down - false
     private bool _iconDirection = true;
     
-    protected SpriteRenderer _spriteRenderer;
+    [SerializeField]
+    private SpriteRenderer _spriteRenderer;
+    [SerializeField]
     protected Sprite taskArrow;
+    [SerializeField]
     protected Sprite fButton;
 
     [SerializeField] protected float iconAmplitude;
@@ -24,11 +27,7 @@ public class Pointer : MonoBehaviour
 
     private void Start()
     {
-        taskArrow = Resources.Load<Sprite>("TaskArrow");
-        fButton = Resources.Load<Sprite>("fButton");
-
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _spriteRenderer.sprite = taskArrow;
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         
         transform.localPosition = delta; 
         SetState(true);

@@ -401,6 +401,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5101155194495674167, guid: cfda291792860f74b834a29214087732,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 50c2584733c81f54cab7f9d05dd9f682,
+        type: 3}
+    - target: {fileID: 5101155194495674167, guid: cfda291792860f74b834a29214087732,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101155194495674167, guid: cfda291792860f74b834a29214087732,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101155194495674167, guid: cfda291792860f74b834a29214087732,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7536173651659251749, guid: cfda291792860f74b834a29214087732,
         type: 3}
       propertyPath: m_Name

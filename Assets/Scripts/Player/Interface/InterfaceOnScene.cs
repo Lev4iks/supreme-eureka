@@ -20,10 +20,12 @@ public class InterfaceOnScene : MonoBehaviour
     }
     #endregion
 
-
-    private GameObject _dialogWindow;
-    private GameObject _bossDialogWindow;
-    private GameObject _selfDialogWindow;
+    [SerializeField]
+    private GameObject dialogWindow;
+    [SerializeField]
+    private GameObject bossDialogWindow;
+    [SerializeField]
+    private GameObject selfDialogWindow;
     private RectTransform _canvasRect;
     private TextMeshProUGUI _dayNameLabel;
 
@@ -40,9 +42,6 @@ public class InterfaceOnScene : MonoBehaviour
 
     private void Start()
     {
-        _dialogWindow = Resources.Load<GameObject>("DialogWindow");
-        _bossDialogWindow = Resources.Load<GameObject>("BossDialogWindow");
-        _selfDialogWindow = Resources.Load<GameObject>("SelfDialogWindow");
         _canvasRect = GetComponent<Canvas>().GetComponent<RectTransform>();
 
         if (isDay)
@@ -102,7 +101,7 @@ public class InterfaceOnScene : MonoBehaviour
 
     public GameObject CreateDialogWindow(Transform character, string dialog)
     {
-        GameObject dWindow = Instantiate(_dialogWindow, character.position, Quaternion.identity, transform);
+        GameObject dWindow = Instantiate(dialogWindow, character.position, Quaternion.identity, transform);
         dWindow.GetComponent<DialogWindow>().SetOptions(character, dialog);
         
         return dWindow;
@@ -110,7 +109,7 @@ public class InterfaceOnScene : MonoBehaviour
     
     public GameObject CreateBossDialogWindow(Transform character, string dialog)
     {
-        GameObject dWindow = Instantiate(_bossDialogWindow, character.position, Quaternion.identity, transform);
+        GameObject dWindow = Instantiate(bossDialogWindow, character.position, Quaternion.identity, transform);
         dWindow.GetComponent<DialogWindow>().SetOptions(character, dialog);
 
         return dWindow;
@@ -118,7 +117,7 @@ public class InterfaceOnScene : MonoBehaviour
     
     public GameObject CreateSelfDialogWindow(Transform character, string dialog)
     {
-        GameObject dWindow = Instantiate(_selfDialogWindow, character.position, Quaternion.identity, transform);
+        GameObject dWindow = Instantiate(selfDialogWindow, character.position, Quaternion.identity, transform);
         dWindow.GetComponent<DialogWindow>().SetOptions(character, dialog);
 
         return dWindow;

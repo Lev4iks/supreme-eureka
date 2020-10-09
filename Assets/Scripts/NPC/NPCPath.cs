@@ -32,12 +32,12 @@ public class NPCPath : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Vector2.Distance(_travelPoints[_curentIndex].position,transform.position) < 0.1f)
+        if (Vector2.Distance(_travelPoints[_curentIndex].position, transform.position) < 0.1f)
         {
             if (_curentIndex == 0)
             {
                 _reverseWay = false;
-                if(!_courantineHasStarted)
+                if (!_courantineHasStarted)
                     StartCoroutine(StandTime());
             }
 

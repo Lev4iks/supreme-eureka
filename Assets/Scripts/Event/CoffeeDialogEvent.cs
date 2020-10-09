@@ -18,9 +18,14 @@ public class CoffeeDialogEvent : Event
 
     private Dialog _dialogFirst;
     private Dialog _dialogSecond;
-    public GameObject npcFirst;
-    public GameObject npcSecond;
-
+    [SerializeField]
+    private GameObject fTalkEvent;
+    [SerializeField]
+    public GameObject sTalkEvent;
+    [SerializeField]
+    private GameObject npcFirst;
+    [SerializeField]
+    private GameObject npcSecond;
 
     protected override void Start()
     {
@@ -43,8 +48,8 @@ public class CoffeeDialogEvent : Event
 
     public override void Interact()
     {
-        npcFirst.GetComponentInChildren<GameObject>().SetActive(true);
-        npcSecond.GetComponentInChildren<GameObject>().SetActive(true);
+        fTalkEvent.SetActive(true);
+        sTalkEvent.SetActive(true);
         audioSource.PlayOneShot(interactSound);
         playerAnimations.TriggerInteraction(InteractionType.Drink);
         pointer.SetState(false);
